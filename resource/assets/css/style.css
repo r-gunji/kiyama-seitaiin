@@ -1,0 +1,376 @@
+:root {
+  --color-primary: #2f5f42;
+  --color-accent: #d79a44;
+  --color-bg: #f4f4f4;
+  --color-text: #24322a;
+  --color-muted: #6f7a73;
+  --color-white: #ffffff;
+  --color-border: #d7ddd9;
+  --container-width: 1120px;
+  --radius-md: 12px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.75;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.l-container {
+  width: min(100% - 48px, var(--container-width));
+  margin-inline: auto;
+}
+
+main {
+  padding-top: 96px;
+}
+
+section {
+  padding-block: 72px;
+}
+
+.l-section-heading {
+  margin-bottom: 32px;
+}
+
+.l-section-heading__en {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+}
+
+.l-section-heading__ja {
+  margin: 8px 0 0;
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.c-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  min-height: 48px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: opacity 0.3s ease;
+}
+
+.c-button:hover {
+  opacity: 0.82;
+}
+
+.c-button--primary {
+  color: var(--color-white);
+  background-color: var(--color-accent);
+}
+
+.c-button--line {
+  border-color: var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.92);
+  color: var(--color-primary);
+}
+
+.c-button--ghost {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background-color: transparent;
+}
+
+.top-fv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.top-fv__catch-sub {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 4px 10px;
+  background-color: #eef2ee;
+  font-size: 0.9375rem;
+}
+
+.top-fv__catch-main {
+  margin: 0 0 24px;
+  font-size: 2.5rem;
+  line-height: 1.4;
+}
+
+.top-fv__panel {
+  margin-bottom: 24px;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: #f8faf8;
+}
+
+.top-fv__price,
+.top-fv__time {
+  margin: 0;
+}
+
+.top-fv__price strong {
+  color: var(--color-accent);
+  font-size: 1.625rem;
+}
+
+.top-fv__image {
+  min-height: 360px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(rgba(47, 95, 66, 0.25), rgba(47, 95, 66, 0.25)),
+    url("/assets/img/AdobeStock_239486520.jpeg") center / cover no-repeat;
+}
+
+.top-features {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.top-features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.top-features__card {
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-md);
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.top-features__image {
+  height: 160px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.top-features__title {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+
+.top-features__text {
+  margin: 0;
+  font-size: 0.9375rem;
+}
+
+.top-flow__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 16px;
+}
+
+.top-flow__item {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-white);
+}
+
+.top-flow__step {
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  border-radius: 50%;
+  background-color: #eef2ee;
+  color: var(--color-primary);
+  display: grid;
+  place-content: center;
+  font-weight: 700;
+}
+
+.top-flow__title {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.top-flow__text {
+  margin: 6px 0 0;
+  color: var(--color-muted);
+}
+
+.top-greeting {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 40px;
+  align-items: center;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.top-greeting__image {
+  min-height: 280px;
+  border-radius: var(--radius-md);
+  background: #c8d8cd url("/assets/img/AdobeStock_858632691.jpeg") center / cover no-repeat;
+}
+
+.top-greeting__label {
+  margin: 0;
+  color: #d9e7dd;
+}
+
+.top-greeting__title {
+  margin: 8px 0 12px;
+  font-size: 2rem;
+}
+
+.top-greeting__name {
+  margin: 0 0 12px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.top-greeting__text {
+  margin: 0 0 20px;
+}
+
+.top-price__main {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.top-price__main strong {
+  color: var(--color-accent);
+  font-size: 2.5rem;
+}
+
+.top-price__note {
+  margin-top: 12px;
+  color: var(--color-muted);
+}
+
+.top-price__payments {
+  margin: 16px 0 0;
+  padding-left: 1.2em;
+}
+
+.top-contact {
+  position: relative;
+  padding-block: 96px;
+  overflow: hidden;
+}
+
+.top-contact__bg {
+  position: absolute;
+  inset: 0;
+  background: url("/assets/img/f2778d09108b4c824dd29e1fee7c873372e1145f.jpg") center / cover no-repeat;
+  filter: blur(2px);
+  transform: scale(1.05);
+}
+
+.top-contact__card {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.top-contact__label {
+  margin: 0;
+  color: #b07e39;
+}
+
+.top-contact__title {
+  margin: 4px 0 12px;
+  font-size: 2.25rem;
+}
+
+.top-contact__text {
+  margin: 0;
+}
+
+.top-contact__buttons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.top-contact__hours {
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .l-container {
+    width: min(100% - 32px, var(--container-width));
+  }
+
+  main {
+    padding-top: 80px;
+  }
+
+  section {
+    padding-block: 56px;
+  }
+
+  .l-section-heading__ja {
+    font-size: 1.75rem;
+  }
+
+  .top-fv,
+  .top-greeting {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .top-fv__catch-main {
+    font-size: 1.75rem;
+  }
+
+  .top-fv__image {
+    min-height: 240px;
+  }
+
+  .top-features__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .top-contact__card {
+    padding: 28px 20px;
+  }
+
+  .top-contact__title {
+    font-size: 1.875rem;
+  }
+}
