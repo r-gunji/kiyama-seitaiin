@@ -1,0 +1,96 @@
+@charset "utf-8";
+main {
+    display: flex;
+    justify-content: center;
+}
+.wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#conform {
+    width: 100%;
+    margin-bottom: 100px;
+}
+hgroup {
+    text-align: center;
+}
+h5 {
+    color: red;
+    font-size: 17px;
+}
+hgroup h2{
+    color: #2A554B; 
+    font-size: 42px;
+    font-family: 'Noto Sans JP';
+}
+hgroup p {
+    color: #E09C48;
+    font-size: 23px;
+    font-family: 'Noto Sans JP';
+    margin-bottom: 15px;
+}
+div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+}
+div:last-of-type {
+    margin-bottom: 0;
+}
+input,select {
+    width: 895px;
+    height: 60px;
+}
+textarea {
+    width: 895px;
+    height: 100px;
+}
+input,select,textarea {
+    border-color: #245C4E;
+    color: #245C4E;
+    background-color: #F4F7F6;
+}
+span {
+    display: flex;
+    flex-wrap: nowrap;
+}
+#contitle {
+    margin-top: 127px;
+    margin-bottom: 45px;
+}
+.agree-check input{
+    width: 22px;
+    height: 22px;
+    margin-right: 20px;
+}
+.agree-check {
+    justify-content: center;
+}
+strong {
+    border-bottom: 1px black solid;
+}
+.confirmation-on {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.confirmation-on button {
+    width: 366px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #237C66;
+    color: #FFFFFF;
+    text-align: center;
+}
+.confirmation button {
+    width: 366px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #eeffe6;
+    color: #999999;
+    text-align: center;
+}
