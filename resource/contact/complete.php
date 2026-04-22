@@ -21,9 +21,6 @@
     unset($_SESSION['token']);
 
     $isError = [];
-    if (!hasValueIn('inquiry')) {
-        $isError['is_inquiry_empty'] = true;
-    }
     if(!hasValueIn('name')){
         $isError['is_name_empty'] = true;
     }
@@ -47,6 +44,9 @@
     if($hasEmail && $hasConfirmEmail && $_POST['confirm-email'] !== $_POST['email']){
       $isError['is_confirm_email_not_match'] = true;
     }
+    if (!hasValueIn('inquiry')) {
+        $isError['is_inquiry_empty'] = true;
+    }
     if(!hasValueIn('comment')){
       $isError['is_comment_empty'] = true;
     }
@@ -69,14 +69,16 @@
 
     $replacements = [
       '${date}' => date("Y年m月d日H時i分s秒"),
-      '${inquiry}' => htmlspecialchars($_POST['inquiry'] ?? '', ENT_QUOTES, 'UTF-8'),
-      '${service}' => htmlspecialchars($_POST['service'] ?? '', ENT_QUOTES, 'UTF-8'),
       '${name}' => htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8'),
       '${furigana}' => htmlspecialchars($_POST['furigana'], ENT_QUOTES, 'UTF-8'),
       '${email}' => htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8'),
       '${confirm-email}' => htmlspecialchars($_POST['confirm-email'], ENT_QUOTES, 'UTF-8'),
       '${tel}' => htmlspecialchars($_POST['tel'], ENT_QUOTES, 'UTF-8'),
+      '${inquiry}' => htmlspecialchars($_POST['inquiry'] ?? '', ENT_QUOTES, 'UTF-8'),
+      '${preferreddate}' => htmlspecialchars($_POST['preferreddate'] ?? '', ENT_QUOTES, 'UTF-8'),
+      '${menu}' => htmlspecialchars($_POST['menu'] ?? '', ENT_QUOTES, 'UTF-8'),
       '${comment}' => htmlspecialchars($_POST['comment'] ?? '', ENT_QUOTES, 'UTF-8'),
+      '${other}' => htmlspecialchars($_POST['other'] ?? '', ENT_QUOTES, 'UTF-8'),
     ];
 
     // メール送信
@@ -90,7 +92,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <title>お問い合わせ完了 | 株式会社タイム</title>
+    <title>お問い合わせ完了 | きやま整体</title>
     <meta charset="utf-8">
     <meta name="description" content="株式会社タイムのお問い合わせ完了ページです。">
     <meta name="keywords" content="株式会社タイム, お問い合わせ, お問い合わせ完了, お問い合わせ完了ページ">
@@ -102,25 +104,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ress@4.0.0/dist/ress.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/common.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/contact.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
   </head>
   <body class="page-contact">
     <?php include __DIR__ . '/../includes/header.php'; ?>
     <main>
-    <section class="complete-main" id="complete">
-			<div class="complete-main__inner l-inner">
-				<p class="complete-heading">
-          送信が完了しました。<br>この度はお問い合わせありがとうございます。
-        </p>
-        <a class="button top-button" href="/">トップに戻る</a>
-			</div>
-		</section>
+      <div  class="wrapper">
+        <section class="complete-main" id="complete">
+          <div class="complete-main__inner l-inner">
+            <p class="complete-heading">
+              この度はご予約いただき、誠にありがとうございます。<br>
+              ご入力いただいた内容を確認のうえ、折り返しご連絡いたします。
+            </p>
+            <p class="complete-bodying">
+              なお、数日経っても連絡がない場合は、
+              お手数ですがお電話にてお問い合わせください。
+            </p>
+            <a class="button top-button" href="/">トップに戻る</a>
+          </div>
+        </section>
+      </div>
     </main>
     <?php include __DIR__ . '/../includes/footer.php'; ?>
-    <script src="/assets/js/common.js"></script>
+    <script src="../assets/js/common.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </body>
 </html>
