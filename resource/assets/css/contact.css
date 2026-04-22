@@ -9,9 +9,34 @@ main {
     justify-content: center;
     flex-wrap: wrap;
 }
-#conform {
+#contact-title,#confirm {
+    margin-top: 127px;
+    margin-bottom: 45px;
+}
+#contact-form,.confirm-main {
     width: 100%;
     margin-bottom: 100px;
+}
+.contact-main__inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact-main__inner form {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+.confirm-title {
+    width: 100%;
+    text-align: center;
+}
+.form-table {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
 }
 hgroup {
     text-align: center;
@@ -20,7 +45,7 @@ h5 {
     color: red;
     font-size: 17px;
 }
-hgroup h2{
+h2{
     color: #2A554B; 
     font-size: 42px;
     font-family: 'Noto Sans JP';
@@ -31,15 +56,17 @@ hgroup p {
     font-family: 'Noto Sans JP';
     margin-bottom: 15px;
 }
-div {
+.form-row {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     margin-bottom: 30px;
 }
-div:last-of-type {
-    margin-bottom: 0;
+input,select,textarea {
+    border:1px #245C4E solid;
+    color: #245C4E;
+    background-color: #F4F7F6;
 }
 input,select {
     width: 895px;
@@ -49,24 +76,32 @@ textarea {
     width: 895px;
     height: 100px;
 }
-input,select,textarea {
-    border-color: #245C4E;
-    color: #245C4E;
-    background-color: #F4F7F6;
+select {
+    appearance: auto;
 }
 span {
     display: flex;
     flex-wrap: nowrap;
 }
-#contitle {
-    margin-top: 127px;
-    margin-bottom: 45px;
+.agree {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
 }
-.agree-check input{
+.agree label {
+    display: flex;
+    flex-wrap: nowrap;
+}
+#agree {
     width: 22px;
     height: 22px;
     margin-right: 20px;
 }
+.agree label a {
+    color: black;
+}
+/*
 .agree-check {
     justify-content: center;
 }
@@ -77,20 +112,34 @@ strong {
     width: 100%;
     display: flex;
     justify-content: center;
+}*/
+th,td {
+    height: 75px;
 }
-.confirmation-on button {
+th {
+    width: 20%;
+}
+.form-consent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact-main__consent {
+    display: flex;
+    justify-content: center;
+}
+button {
     width: 366px;
     height: 60px;
     border-radius: 60px;
     background-color: #237C66;
-    color: #FFFFFF;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.confirmation button {
-    width: 366px;
-    height: 60px;
-    border-radius: 60px;
-    background-color: #eeffe6;
-    color: #999999;
-    text-align: center;
+button .submit-text {
+    color: #FFFFFF;
+}
+.page-contact button {
+    margin: 25px;
 }

@@ -63,7 +63,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <title>お問い合わせ内容の確認 | 株式会社タイム</title>
+    <title>お問い合わせ内容の確認 | きやま整体</title>
     <meta charset="utf-8">
     <meta name="description" content="株式会社タイムのお問い合わせ内容の確認ページです。">
     <meta name="keywords" content="株式会社タイム, お問い合わせ, お問い合わせ内容の確認, お問い合わせ内容の確認ページ">
@@ -75,28 +75,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ress@4.0.0/dist/ress.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/common.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/contact.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
   </head>
   <body class="page-contact">
     <?php include __DIR__ . '/../includes/header.php'; ?>
     <main>
+      <div class="wrapper">
       <section class="confirm-main" id="confirm">
         <div class="contact-main__inner l-inner">
-          <h1 class="confirm-title">以下の内容で<span class="u-nowrap">よろしいですか？</span></h1>
+          <h2 class="confirm-title">以下の内容でよろしいですか？</h2>
           <table class="form-table">
-            <tr>
-              <th>
-                <p>お問い合わせ項目</p>
-              </th>
-              <td>
-                <div>
-                  <?php echo htmlspecialchars($_POST['inquiry'], ENT_QUOTES, 'UTF-8'); ?>
-                </div>
-              </td>
-            </tr>
             <tr>
               <th>
                 <p>お名前</p>
@@ -118,15 +109,6 @@
               </td>
             </tr>
             <tr>
-              <th>
-                <p>会社名</p>
-              </th>
-              <td>
-                <div class="row-content">
-                  <?php echo htmlspecialchars($_POST['organization'], ENT_QUOTES, 'UTF-8'); ?>
-                </div>
-              </td>
-            </tr>
             <tr>
               <th>
                 <p>メールアドレス</p>
@@ -139,7 +121,7 @@
             </tr>
             <tr>
               <th>
-                <p>メールアドレス（確認用）</p>
+                <p>メールアドレス[確認用]</p>
               </th>
               <td>
                 <div class="row-content">
@@ -157,17 +139,54 @@
                 </div>
               </td>
             </tr>
-            <tr class="last-tr">
+            <tr>
               <th>
-                <p>お問い合わせ内容</p>
+                <p>再診・初診</p>
+              </th>
+              <td>
+                <div>
+                  <?php echo htmlspecialchars($_POST['inquiry'], ENT_QUOTES, 'UTF-8'); ?>
+                </div>
+              </td>
+            </tr>
+            </tr>
+              <th>
+                <p>希望日時</p>
+              </th>
+              <td>
+                <div class="row-content">
+                  <?php echo htmlspecialchars($_POST['preferreddate'], ENT_QUOTES, 'UTF-8'); ?>
+                </div>
+              </td>
+            </tr>
+              <th>
+                <p>メニュー</p>
+              </th>
+              <td>
+                <div>
+                  <?php echo htmlspecialchars($_POST['menu'], ENT_QUOTES, 'UTF-8'); ?>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <p>症状の詳細</p>
               </th>
               <td>
                 <div class="last-form-content"><?php echo htmlspecialchars($_POST['comment'], ENT_QUOTES, 'UTF-8'); ?></div>
               </td>
             </tr>
+            <tr class="last-tr">
+              <th>
+                <p>その他</p>
+              </th>
+              <td>
+                <div class="last-form-content"><?php echo htmlspecialchars($_POST['other'], ENT_QUOTES, 'UTF-8'); ?></div>
+              </td>
+            </tr>
           </table>
           <form action="/contact/complete.php" class="confirm-form" method="post">
-            <button class="button back-button" formaction="/contact/contact.php" formmethod="post" type="submit">
+            <button class="button back-button" formaction="./contact.php" formmethod="post" type="submit">
               <span class="submit-text">戻る</span>
             </button>
             <button class="button top-button" formmethod="post" type="submit">
@@ -180,6 +199,7 @@
           </form>
         </div>
       </section>
+      </div>
     </main>
     <?php include __DIR__ . '/../includes/footer.php'; ?>
     <script src="/assets/js/common.js"></script>
