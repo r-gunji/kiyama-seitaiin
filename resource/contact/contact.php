@@ -97,7 +97,7 @@
               <div class="form-row">
                 <span>
                   <label for="tel">電話番号</label>
-                  <h5 class="optional">＊</h5>
+                  <h5 class="required">＊</h5>
                 </span>
                 <input autocomplete="tel-national" id="tel" name="tel" placeholder="入力例：00011112222" type="tel" value="<?php echo htmlspecialchars($post_data['tel'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
               </div>
@@ -121,7 +121,7 @@
               <div class="form-row">
                 <span>
                   <label for="preferreddate">希望日時</label>
-                  <h5 class="optional">＊</h5>
+                  <h5 class="required">＊</h5>
                 </span>
                 <input autocomplete="off" id="preferreddate" name="preferreddate" placeholder="/年/月/日 --:--" type="datetime-local" value="<?php echo htmlspecialchars($post_data['preferreddate'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
                 <script>
@@ -152,7 +152,7 @@
 
               <div class="form-row">
                 <span>
-                  <label for="comment">お問い合わせ内容</label>
+                  <label for="comment">症状の詳細</label>
                   <h5 class="required">＊</h5>
                 </span>
                 <textarea autocomplete="off" id="comment" name="comment" placeholder="できるだけ詳しくお書きください" required><?php echo htmlspecialchars($post_data['comment'] ?? '', ENT_QUOTES, 'UTF-8'); ?></textarea>
@@ -164,7 +164,7 @@
               <div class="form-row last-form-row">
                 <span>
                   <label for="other">その他</label>
-                  <h5 class="required"></h5>
+                  <h5 class="optional"></h5>
                 </span>
                 <textarea autocomplete="off" id="other" name="other" placeholder="ご質問・ご要望等ございましたらご記入ください" required><?php echo htmlspecialchars($post_data['other'] ?? '', ENT_QUOTES, 'UTF-8'); ?></textarea>
               </div>

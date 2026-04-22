@@ -185,7 +185,7 @@
               </td>
             </tr>
           </table>
-          <form action="/contact/complete.php" class="confirm-form" method="post">
+          <form action="./complete.php" class="confirm-form" method="post">
             <button class="button back-button" formaction="./contact.php" formmethod="post" type="submit">
               <span class="submit-text">戻る</span>
             </button>

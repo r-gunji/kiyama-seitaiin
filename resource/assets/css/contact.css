@@ -9,7 +9,7 @@ main {
     justify-content: center;
     flex-wrap: wrap;
 }
-#contact-title,#confirm {
+#contact-title,#confirm,#complete {
     margin-top: 127px;
     margin-bottom: 45px;
 }
@@ -17,7 +17,7 @@ main {
     width: 100%;
     margin-bottom: 100px;
 }
-.contact-main__inner {
+.contact-main__inner,.complete-main__inner {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +27,17 @@ main {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-
+    margin-bottom: 100px;
+}
+.complete-main__inner a {
+    width: 366px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #237C66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
 }
 .confirm-title {
     width: 100%;
@@ -101,23 +111,11 @@ span {
 .agree label a {
     color: black;
 }
-/*
-.agree-check {
-    justify-content: center;
-}
-strong {
-    border-bottom: 1px black solid;
-}
-.confirmation-on {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}*/
 th,td {
     height: 75px;
 }
 th {
-    width: 20%;
+    width: 25%;
 }
 .form-consent {
     display: flex;
