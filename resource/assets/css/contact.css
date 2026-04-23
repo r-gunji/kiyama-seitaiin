@@ -91,7 +91,7 @@ h2 {
     font-size: 2.625rem;
     font-family: 'Noto Sans JP';
 }
-p {
+p,label {
     color: #245C4E;
 }
 hgroup p {
@@ -111,6 +111,7 @@ input,select,textarea {
     border:1px #245C4E solid;
     color: #245C4E;
     background-color: #F4F7F6;
+    padding: 10px 0 10px 10px;
 }
 input,select {
     width: 895px;
@@ -126,6 +127,7 @@ select {
 .list-title {
     display: flex;
     flex-wrap: nowrap;
+    margin-top: 20px;
 }
 .error-message {
     width: 100%;
@@ -147,7 +149,7 @@ select {
     height: 22px;
     margin-right: 20px;
 }
-.agree label a {
+.agree label a,.agree label span {
     color: black;
 }
 th,td {
@@ -181,6 +183,9 @@ button .submit-text {
     display: flex;
     align-items: center;
 }
+.back-button {
+    background-color: #245C4E;
+}
 .page-contact button {
     margin: 25px;
 }
@@ -190,14 +195,14 @@ button .submit-text {
         width: 90%;
     }
     input,.contact-main__control,textarea {
-        width: 74%;
+        width: 70%;
     }
     select {
         width: 100%;
     }
 }
 /*タブレット＆SP版の処理*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     input,select,textarea {
         width: 100%;
     }

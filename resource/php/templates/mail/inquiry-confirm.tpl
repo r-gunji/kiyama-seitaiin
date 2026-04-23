@@ -17,8 +17,7 @@
 ■□■─────────────────────────────────────────────■□■
 きやま整体院
 住所 : 〒769-1601 香川県観音寺市豊浜町姫浜 701−1
-Mail : ###@gmail.com
+Mail : shun.0210.sport@icloud.com
 TEL：070-3525-6934
-FAX：XXXXXXXXXX
-HP : https://URL
+HP : https://kiyama-katakosiharikyuuin.com
 ■□■─────────────────────────────────────────────■□■

@@ -19,14 +19,16 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <title>お問い合わせ｜きやま整体</title>
+    <title>お問い合わせ｜きやま整体院</title>
     <meta charset="utf-8">
-    <meta name="description" content="株式会社タイムのお問い合わせページです。">
-    <meta name="keywords" content="株式会社タイム, お問い合わせ, お問い合わせページ">
+    <meta name="description" content="きやま整体院のお問い合わせページです。">
+    <meta name="keywords" content="きやま整体院, お問い合わせ, お問い合わせページ">
     <meta name="robots" content="index, follow">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="telephone=no" name="format-detection">
+    <link rel="canonical" href="https://kiyama-katakosi.com/">
+    <link rel="icon" href="assets/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
@@ -58,7 +60,7 @@
                   <label for="name">お名前</label>
                   <h5 class="required">＊</h5>
                 </span>
-                <input autocomplete="name" id="name" name="name" placeholder="入力例：田中太郎" type="text" value="<?php echo htmlspecialchars($post_data['name'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+                <input autocomplete="name" id="name" name="name" placeholder="入力例：田中太郎" type="text" value="<?php echo htmlspecialchars($post_data['name'] ?? '', ENT_QUOTES, 'UTF-8'); ?>" required>
                 <?php if (isset($errors['is_name_empty'])): ?>
                   <span class="error-message <?php if (isset($errors['is_name_empty'])) echo 'open'; ?>">※お名前を入力してください</span>
                 <?php endif; ?>
@@ -69,7 +71,7 @@
                   <label for="furigana">フリガナ</label>
                   <h5 class="required">＊</h5>
                 </span>
-                <input autocomplete="additional-name" id="furigana" name="furigana" placeholder="入力例：タナカタロウ" type="text" value="<?php echo htmlspecialchars($post_data['furigana'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+                <input autocomplete="additional-name" id="furigana" name="furigana" placeholder="入力例：タナカタロウ" type="text" value="<?php echo htmlspecialchars($post_data['furigana'] ?? '', ENT_QUOTES, 'UTF-8'); ?>" required>
                 <?php if (isset($errors['is_furigana_empty']) || isset($errors['is_furigana_illegal'])): ?>
                   <span class="error-message <?php if (isset($errors['is_furigana_empty']) || isset($errors['is_furigana_illegal'])) echo 'open'; ?>">※フリガナを正しく入力してください</span>
                 <?php endif; ?>
@@ -102,7 +104,7 @@
                   <label for="tel">電話番号</label>
                   <h5 class="required">＊</h5>
                 </span>
-                <input autocomplete="tel-national" id="tel" name="tel" placeholder="入力例：00011112222" type="tel" value="<?php echo htmlspecialchars($post_data['tel'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+                <input autocomplete="tel-national" id="tel" name="tel" placeholder="入力例：00011112222" type="tel" value="<?php echo htmlspecialchars($post_data['tel'] ?? '', ENT_QUOTES, 'UTF-8'); ?>" required>
                 <?php if (isset($errors['is_tel_empty'])): ?>
                   <span class="error-message <?php if (isset($errors['is_tel_empty'])) echo 'open'; ?>">※電話番号を入力してください</span>
                 <?php endif; ?>
@@ -129,7 +131,7 @@
                   <label for="preferreddate">希望日時</label>
                   <h5 class="required">＊</h5>
                 </span>
-                <input autocomplete="off" id="preferreddate" name="preferreddate" placeholder="/年/月/日 --:--" type="datetime-local" value="<?php echo htmlspecialchars($post_data['preferreddate'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+                <input autocomplete="off" id="preferreddate" name="preferreddate" placeholder="/年/月/日 --:--" type="datetime-local" value="<?php echo htmlspecialchars($post_data['preferreddate'] ?? '', ENT_QUOTES, 'UTF-8'); ?>" required>
                 <script>
                   const now = new Date();
 
@@ -183,11 +185,10 @@
             <div class="contact-main__consent">
               <div class="form-consent">
                 <div class="agree">
-                  <!--<p>株式会社タイムの「個人情報の取扱い」について<span class="u-nowrap">ご確認いただき、</span><br class="u-hidden-sp">ご同意いただいた上で<span class="u-nowrap">「確認する」</span><span class="u-nowrap">ボタン</span>をクリックしてください。</p>-->
                   <label for="agree">
                     <input id="agree" name="agree" type="checkbox" required>
                     <span class="checkmark"></span>
-                    <span><a href="#">プライバシーポリシー</a>に同意する</span>
+                    <span><a href="../privacypolicy.html">プライバシーポリシー</a>に同意する</span>
                   </label>
                   <!--<div class="error-message-agree">
                     ※プライバシーポリシーに同意してください
