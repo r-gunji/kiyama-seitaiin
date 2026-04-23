@@ -31,6 +31,12 @@
   if($hasEmail && $hasConfirmEmail && $_POST['confirm-email'] !== $_POST['email']){
     $isError['is_confirm_email_not_match'] = true;
   }
+  if(!hasValueIn('tel')){
+      $isError['is_tel_empty'] = true;
+  }
+  if(!hasValueIn('preferreddate')){
+      $isError['is_preferreddate_empty'] = true;
+  }
   if(!hasValueIn('comment')){
     $isError['is_comment_empty'] = true;
   }
@@ -39,7 +45,7 @@
   if(!empty($isError)){
       $_SESSION['errors'] = $isError;
       header("Status: 301 Moved Permanently");
-      header("Location: /contact/contact.php");
+      header("Location: ./contact.php");
       exit;
   }
 
@@ -187,10 +193,26 @@
           </table>
           <form action="./complete.php" class="confirm-form" method="post">
             <button class="button back-button" formaction="./contact.php" formmethod="post" type="submit">
-              <span class="submit-text">戻る</span>
+              <span class="submit-text">
+                  <svg class="arrow--left" width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M5 12h14M13 5l7 7-7 7"
+                    stroke="white"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  </svg>戻る</span>
             </button>
             <button class="button top-button" formmethod="post" type="submit">
-              <span class="submit-text">送信する</span>
+              <span class="submit-text">送信する
+                  <svg width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M5 12h14M13 5l7 7-7 7"
+                    stroke="white"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  </svg></span>
             </button>
               <?php foreach ($_POST as $key => $value): ?>
                 <input name="<?php echo $key; ?>" type="hidden" value="<?php echo $value; ?>">

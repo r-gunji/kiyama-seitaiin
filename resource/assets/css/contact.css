@@ -9,6 +9,23 @@ main {
     justify-content: center;
     flex-wrap: wrap;
 }
+.arrow--left {
+  transform: scaleX(-1);
+}
+.form-error {
+	width: 100%;
+	height: clamp(3.125rem, 2.3864rem + 1.8182vw, 3.75rem);
+	margin: clamp(1.25rem, -0.9659rem + 5.4545vw, 3.125rem) 0;
+    margin-top: 0;
+	padding-left: 1.875rem;
+	color: white;
+	background: #E09C48;
+	visibility: hidden;
+}
+.form-error p {
+	font-size: clamp(0.875rem, 0.4318rem + 1.0909vw, 1.25rem);
+	line-height: clamp(3.125rem, 2.3864rem + 1.8182vw, 3.75rem);
+}
 #contact-title,#confirm,#complete {
     margin-top: 127px;
     margin-bottom: 45px;
@@ -17,11 +34,19 @@ main {
     width: 100%;
     margin-bottom: 100px;
 }
-.contact-main__inner,.complete-main__inner {
+.contact-main__inner {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.complete-main__inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 .contact-main__inner form {
     display: flex;
@@ -39,6 +64,12 @@ main {
     align-items: center;
     color: #FFFFFF;
 }
+.complete-heading {
+    margin-bottom: 20px;
+}
+.complete-bodying {
+    margin-bottom: 40px;
+}
 .confirm-title {
     width: 100%;
     text-align: center;
@@ -53,16 +84,19 @@ hgroup {
 }
 h5 {
     color: red;
-    font-size: 17px;
+    font-size: 1.0625rem;
 }
-h2{
+h2 {
     color: #2A554B; 
-    font-size: 42px;
+    font-size: 2.625rem;
     font-family: 'Noto Sans JP';
+}
+p {
+    color: #245C4E;
 }
 hgroup p {
     color: #E09C48;
-    font-size: 23px;
+    font-size: 1.4375rem;
     font-family: 'Noto Sans JP';
     margin-bottom: 15px;
 }
@@ -70,7 +104,7 @@ hgroup p {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-bottom: 30px;
 }
 input,select,textarea {
@@ -89,9 +123,14 @@ textarea {
 select {
     appearance: auto;
 }
-span {
+.list-title {
     display: flex;
     flex-wrap: nowrap;
+}
+.error-message {
+    width: 100%;
+    text-align: right;
+    color: red;
 }
 .agree {
     width: 100%;
@@ -113,6 +152,7 @@ span {
 }
 th,td {
     height: 75px;
+    color: #245C4E;
 }
 th {
     width: 25%;
@@ -137,7 +177,65 @@ button {
 }
 button .submit-text {
     color: #FFFFFF;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
 }
 .page-contact button {
     margin: 25px;
+}
+/*wrapperのスムージング*/
+@media screen and (max-width: 1280px) {
+    .wrapper {
+        width: 90%;
+    }
+    input,.contact-main__control,textarea {
+        width: 74%;
+    }
+    select {
+        width: 100%;
+    }
+}
+/*タブレット＆SP版の処理*/
+@media screen and (max-width: 1024px) {
+    input,select,textarea {
+        width: 100%;
+    }
+    .contact-main__control {
+        width: 100%;
+    }
+    .list-title {
+        margin-bottom: 20px;
+    }
+    textarea {
+        height: 150px;
+    }
+    tr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    th,td {
+        height: auto;
+        padding: 20px 0;
+        width: 100%;
+    }
+    .contact-main__inner form {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    h2 {
+      font-size: clamp(1.5rem, 3.92vw, 2.625rem);  
+    }
+    .page-contact button {
+        margin: 25px clamp(0rem, 4.26vw, 3.125rem);
+    }
+    .complete-heading, .complete-bodying {
+        font-size: clamp(0.75rem, 2.96vw, 1rem);
+    }
+    .button,.complete-main__inner a {
+        width: clamp(300px, 61vw, 366px);
+        height: clamp(49px, 10vw, 60px);
+    }
 }

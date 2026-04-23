@@ -40,15 +40,24 @@ $(function() {
     }
   }
 
-  $('form').on('submit', function(e) {
-    var isAgreeChecked = $('#agree').prop('checked');
-    if (!isAgreeChecked) {
-      e.preventDefault();
-      $('.error-message-agree').addClass('open');
-      // 同意欄を画面中央にスクロール
-      $('html, body').animate({
-        scrollTop: $('.form-consent').offset().top - ($(window).height()/2) + ($('.form-consent').height()/2)
-      }, 'fast');
+  $(function() {
+    if (!$('#contact-form').length) return;
+    // ページ読み込み時に PHP のエラーがあれば form-error を表示
+    if ($('.form-field .open-empty').length > 0) {
+      $('.form-error').css('visibility', 'visible');
+      $('html, body').scrollTop(0);
     }
+
+    $('form').on('submit', function(e) {
+      var isAgreeChecked = $('#agree').prop('checked');
+      if (!isAgreeChecked) {
+        e.preventDefault();
+        $('.error-message-agree').addClass('open');
+        // 同意欄を画面中央にスクロール
+        $('html, body').animate({
+          scrollTop: $('.form-consent').offset().top - ($(window).height()/2) + ($('.form-consent').height()/2)
+        }, 'fast');
+      }
+    });
   });
 });

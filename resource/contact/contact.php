@@ -47,11 +47,14 @@
           </hgroup>
         </section>
         <section id="contact-form">
+          <div class="form-error">
+            <p>未入力の項目があります。</p>
+          </div>
           <form class="contact-main__form" action="confirm.php" method="post">
             <div class="form-field">
 
               <div class="form-row <?php if (isset($errors['is_name_empty'])) echo 'open-empty'; ?>">
-                <span>
+                <span class="list-title">
                   <label for="name">お名前</label>
                   <h5 class="required">＊</h5>
                 </span>
@@ -62,7 +65,7 @@
               </div>
 
               <div class="form-row <?php if (isset($errors['is_furigana_empty'])) echo 'open-empty'; ?> <?php if (isset($errors['is_furigana_illegal'])) echo 'open'; ?>">
-                <span>
+                <span class="list-title">
                   <label for="furigana">フリガナ</label>
                   <h5 class="required">＊</h5>
                 </span>
@@ -73,7 +76,7 @@
               </div>
 
               <div class="form-row <?php if (isset($errors['is_email_empty'])) echo 'open-empty'; ?> <?php if (isset($errors['is_email_illegal'])) echo 'open'; ?>">
-                <span>
+                <span class="list-title">
                   <label for="email">メールアドレス</label>
                   <h5 class="required">＊</h5>
                 </span>
@@ -84,7 +87,7 @@
               </div>
 
               <div class="form-row <?php if (isset($errors['is_confirm_email_empty'])) echo 'open-empty'; ?> <?php if (isset($errors['is_confirm_email_illegal']) || isset($errors['is_confirm_email_not_match'])) echo 'open'; ?>">
-                <span>
+                <span class="list-title">
                   <label for="confirm-email">メールアドレス[確認用]</label>
                   <h5 class="required">＊</h5>
                 </span>
@@ -95,15 +98,18 @@
               </div>
 
               <div class="form-row">
-                <span>
+                <span class="list-title">
                   <label for="tel">電話番号</label>
                   <h5 class="required">＊</h5>
                 </span>
                 <input autocomplete="tel-national" id="tel" name="tel" placeholder="入力例：00011112222" type="tel" value="<?php echo htmlspecialchars($post_data['tel'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+                <?php if (isset($errors['is_tel_empty'])): ?>
+                  <span class="error-message <?php if (isset($errors['is_tel_empty'])) echo 'open'; ?>">※電話番号を入力してください</span>
+                <?php endif; ?>
               </div>
 
               <div class="form-row">
-                <span>
+                <span class="list-title">
                   <label class="contact-main__label" for="inquiry">再診・初診</label>
                   <h5 class="required">＊</h5>
                 </span>
@@ -119,7 +125,7 @@
               </div>
 
               <div class="form-row">
-                <span>
+                <span class="list-title">
                   <label for="preferreddate">希望日時</label>
                   <h5 class="required">＊</h5>
                 </span>
@@ -131,11 +137,15 @@
                   const formatted = now.toISOString().slice(0,16);
 
                   document.getElementById("preferreddate").min = formatted;
+                  
               </script>
+                <?php if (isset($errors['is_preferreddate_empty'])): ?>
+                  <span class="error-message <?php if (isset($errors['is_preferreddate_empty'])) echo 'open'; ?>">※希望日時を入力してください</span>
+                <?php endif; ?>
               </div>
 
               <div class="form-row">
-                <span>
+                <span class="list-title">
                   <label class="contact-main__label" for="menu">メニュー</label>
                   <h5 class="required">＊</h5>
                 </span>
@@ -151,7 +161,7 @@
               </div>
 
               <div class="form-row">
-                <span>
+                <span class="list-title">
                   <label for="comment">症状の詳細</label>
                   <h5 class="required">＊</h5>
                 </span>
@@ -162,11 +172,11 @@
               </div>
 
               <div class="form-row last-form-row">
-                <span>
+                <span class="list-title">
                   <label for="other">その他</label>
                   <h5 class="optional"></h5>
                 </span>
-                <textarea autocomplete="off" id="other" name="other" placeholder="ご質問・ご要望等ございましたらご記入ください" required><?php echo htmlspecialchars($post_data['other'] ?? '', ENT_QUOTES, 'UTF-8'); ?></textarea>
+                <textarea autocomplete="off" id="other" name="other" placeholder="ご質問・ご要望等ございましたらご記入ください" ><?php echo htmlspecialchars($post_data['other'] ?? '', ENT_QUOTES, 'UTF-8'); ?></textarea>
               </div>
 
             </div>
@@ -184,7 +194,16 @@
                   </div>-->
                 </div>
 
-                <button class="button top-button" id="submitBtn" type="submit"><span class="submit-text">確認する&emsp;→</span></button>
+                <button class="button top-button" id="submitBtn" type="submit"><span class="submit-text">確認する
+                  <svg width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M5 12h14M13 5l7 7-7 7"
+                    stroke="white"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  </svg>
+                </span></button>
               </div>
             </div>
           </form>
@@ -194,5 +213,6 @@
     <?php include __DIR__ . '../includes/footer.php'; ?>
     <script src="/assets/js/common.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/contact.js"></script>
   </body>
 </html>
