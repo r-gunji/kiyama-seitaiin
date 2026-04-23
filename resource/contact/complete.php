@@ -56,7 +56,7 @@
       $_SESSION['errors'] = $isError;
 
       header("Status: 301 Moved Permanently");
-      header("Location: /contact/contact.php");
+      header("Location: ./contact.php");
       exit;
     }
 
@@ -120,10 +120,18 @@
               ご入力いただいた内容を確認のうえ、折り返しご連絡いたします。
             </p>
             <p class="complete-bodying">
-              なお、数日経っても連絡がない場合は、
+              なお、数日経っても連絡がない場合は、<br>
               お手数ですがお電話にてお問い合わせください。
             </p>
-            <a class="button top-button" href="/">トップに戻る</a>
+            <a class="button top-button" href="../index.html">
+              <svg class="arrow--left" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M5 12h14M13 5l7 7-7 7"
+                  stroke="white"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                stroke-linejoin="round" />
+              </svg>トップに戻る</a>
           </div>
         </section>
       </div>
