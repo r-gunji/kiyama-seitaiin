@@ -69,14 +69,16 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <title>お問い合わせ内容の確認 | きやま整体</title>
+    <title>お問い合わせ内容の確認 | きやま整体院</title>
     <meta charset="utf-8">
-    <meta name="description" content="株式会社タイムのお問い合わせ内容の確認ページです。">
-    <meta name="keywords" content="株式会社タイム, お問い合わせ, お問い合わせ内容の確認, お問い合わせ内容の確認ページ">
+    <meta name="description" content="きやま整体院のお問い合わせ内容の確認ページです。">
+    <meta name="keywords" content="きやま整体院, お問い合わせ, お問い合わせ内容の確認, お問い合わせ内容の確認ページ">
     <meta name="robots" content="index, follow">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="telephone=no" name="format-detection">
+    <link rel="canonical" href="https://kiyama-katakosi.com/">
+    <link rel="icon" href="assets/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
