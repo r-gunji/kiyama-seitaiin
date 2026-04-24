@@ -152,8 +152,12 @@ section {
 }
 
 .top-features {
+  width: 100vw;
   background-color: var(--color-primary);
   color: var(--color-white);
+}
+
+.top-features .wrapper {
 }
 
 .top-features__grid {
