@@ -57,9 +57,16 @@ section {
   margin-bottom: 32px;
 }
 
+.c-section-heading {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .l-section-heading__en {
   margin: 0;
-  color: var(--color-muted);
+  /*color: var(--color-bg);*/
   font-size: 0.875rem;
   letter-spacing: 0.08em;
 }
@@ -152,6 +159,7 @@ section {
 }
 
 .top-features {
+  width: calc(100vw - var(--scrollbar, 0px));
   background-color: var(--color-primary);
   color: var(--color-white);
 }
@@ -163,27 +171,35 @@ section {
 }
 
 .top-features__card {
+  /*font-family: 'Noto Sans JP';
   padding: 16px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius-md);
-  background-color: rgba(255, 255, 255, 0.06);
+  background-color: rgba(255, 255, 255, 0.06);*/
 }
 
 .top-features__image {
-  height: 160px;
+  width: clamp(224px, 29.17vw, 350px);
+  height: clamp(192px, 25vw, 300px);
+  object-fit: cover;
   margin-bottom: 12px;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 .top-features__title {
   margin: 0 0 8px;
   font-size: 1.25rem;
+  text-align: center;
 }
 
 .top-features__text {
   margin: 0;
-  font-size: 0.9375rem;
+  font-size: 1rem;
+}
+
+.top-features__text--large {
+  color: var(--color-accent);
 }
 
 .top-flow__list {
@@ -372,5 +388,9 @@ section {
 
   .top-contact__title {
     font-size: 1.875rem;
+  }
+  .top-features__image {
+    width:clamp(380px, 95.83vw, 736px) ;
+    height: clamp(122px, 39.06vw, 300px);
   }
 }

@@ -49,3 +49,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+////////////////////////////////////////////////////////////////////
+//各ブラウザ毎のスクロールバー計算　var(--scrollbar)にて自動計算
+////////////////////////////////////////////////////////////////////
+function setScrollbarWidth() {
+  const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+  document.documentElement.style.setProperty('--scrollbar', `${scrollbarWidth}px`);
+}
+
+// 初回実行
+window.addEventListener('load', setScrollbarWidth);
+
+// リサイズ時にも再計算
+window.addEventListener('resize', setScrollbarWidth);
