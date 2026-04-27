@@ -103,8 +103,6 @@
   display: block;
   padding: 1.5rem 0;
   color: #2f3f35;
-  cursor: default;
-  pointer-events: none;
 }
 
 .site-menu-hours {

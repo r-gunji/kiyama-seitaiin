@@ -138,8 +138,6 @@
 	-webkit-text-decoration-color: var(--color-white);
 	text-decoration-color: var(--color-white);
 	text-underline-offset: 0.3em;
-	cursor: default;
-	pointer-events: none;
 }
 @media screen and (max-width: 768px) {
 	.site-footer {

@@ -149,6 +149,10 @@ hgroup p {
 	border-right: 2px solid currentColor;
 	transform: translateY(-50%) rotate(45deg);
 }
+.is-disabled {
+	cursor: default;
+	pointer-events: none;
+}
 .fv {
 	padding-block: 0;
 }
