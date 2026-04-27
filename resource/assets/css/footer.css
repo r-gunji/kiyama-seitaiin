@@ -140,7 +140,7 @@
 }
 @media screen and (max-width: 768px) {
 	.site-footer {
-		padding: 2.5rem 0 0;
+		padding: 2.5rem 0 5rem;
 	}
 	.site-footer__main {
 		grid-template-columns: 1fr;
@@ -178,7 +178,7 @@
 	}
 	.site-footer__table th:first-child {
 		width: clamp(5.8rem, 4.8966rem + 3.4483vw, 6.55rem);
-		font-size: clamp(1rem, 0.1703rem + 3.1609vw, 1.6875rem);
+		font-size: clamp(1rem, 0.6983rem + 1.1494vw, 1.25rem);
 	}
 	.site-footer__table tbody td {
 		font-size: clamp(1.25rem, 0.4957rem + 2.8736vw, 1.875rem);
