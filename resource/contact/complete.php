@@ -140,7 +140,7 @@
 					<a aria-disabled="true" class="site-menu__link" disabled>アクセス</a>
 				</li>
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link" disabled>お問い合わせ</a>
+					<a class="site-menu__link" href="https://tsurumiworks.com/contact/contact.php">お問い合わせ</a>
 				</li>
 			</ul>
 		</div>
@@ -270,22 +270,22 @@
 		<nav aria-label="フッターナビ" class="site-footer__nav">
 			<ul class="site-footer__nav-list wrapper">
 				<li>
-					<a href="#" disabled>三つの特徴</a>
+					<a aria-disabled="true" href="#" disabled>三つの特徴</a>
 				</li>
 				<li>
-					<a href="#" disabled>今までの成り立ち</a>
+					<a aria-disabled="true" href="#" disabled>今までの成り立ち</a>
 				</li>
 				<li>
-					<a href="#" disabled>施術の流れ</a>
+					<a aria-disabled="true" href="#" disabled>施術の流れ</a>
 				</li>
 				<li>
-					<a href="#" disabled>営業時間</a>
+					<a aria-disabled="true" href="#" disabled>営業時間</a>
 				</li>
 				<li>
-					<a href="#" disabled>料金</a>
+					<a aria-disabled="true" href="#" disabled>料金</a>
 				</li>
 				<li>
-					<a href="#" disabled>アクセス</a>
+					<a aria-disabled="true" href="#" disabled>アクセス</a>
 				</li>
 				<li>
 					<a href="https://tsurumiworks.com/contact/contact.php">お問い合わせ</a>
