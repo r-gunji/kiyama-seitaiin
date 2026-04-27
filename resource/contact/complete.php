@@ -122,22 +122,22 @@
 		<div class="site-menu__inner wrapper">
 			<ul class="site-menu__list">
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link" disabled>三つの特徴</a>
+					<a aria-disabled="true" class="site-menu__link is-disabled" disabled>三つの特徴</a>
 				</li>
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link" disabled>院長あいさつ</a>
+					<a aria-disabled="true" class="site-menu__link is-disabled" disabled>院長あいさつ</a>
 				</li>
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link" disabled>お客様の声</a>
+					<a aria-disabled="true" class="site-menu__link is-disabled" disabled>お客様の声</a>
 				</li>
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link" disabled>施術の流れ</a>
+					<a aria-disabled="true" class="site-menu__link is-disabled" disabled>施術の流れ</a>
 				</li>
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link" disabled>料金</a>
+					<a aria-disabled="true" class="site-menu__link is-disabled" disabled>料金</a>
 				</li>
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link" disabled>アクセス</a>
+					<a aria-disabled="true" class="site-menu__link is-disabled" disabled>アクセス</a>
 				</li>
 				<li class="site-menu__item">
 					<a class="site-menu__link" href="https://tsurumiworks.com/contact/contact.php">お問い合わせ</a>
@@ -270,22 +270,22 @@
 		<nav aria-label="フッターナビ" class="site-footer__nav">
 			<ul class="site-footer__nav-list wrapper">
 				<li>
-					<a aria-disabled="true" href="#" disabled>三つの特徴</a>
+					<a aria-disabled="true" class="is-disabled" href="#" disabled>三つの特徴</a>
 				</li>
 				<li>
-					<a aria-disabled="true" href="#" disabled>今までの成り立ち</a>
+					<a aria-disabled="true" class="is-disabled" href="#" disabled>今までの成り立ち</a>
 				</li>
 				<li>
-					<a aria-disabled="true" href="#" disabled>施術の流れ</a>
+					<a aria-disabled="true" class="is-disabled" href="#" disabled>施術の流れ</a>
 				</li>
 				<li>
-					<a aria-disabled="true" href="#" disabled>営業時間</a>
+					<a aria-disabled="true" class="is-disabled" href="#" disabled>営業時間</a>
 				</li>
 				<li>
-					<a aria-disabled="true" href="#" disabled>料金</a>
+					<a aria-disabled="true" class="is-disabled" href="#" disabled>料金</a>
 				</li>
 				<li>
-					<a aria-disabled="true" href="#" disabled>アクセス</a>
+					<a aria-disabled="true" class="is-disabled" href="#" disabled>アクセス</a>
 				</li>
 				<li>
 					<a href="https://tsurumiworks.com/contact/contact.php">お問い合わせ</a>
