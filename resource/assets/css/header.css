@@ -1,3 +1,4 @@
+@charset "utf-8";
 .site-header {
   position: fixed;
   top: 0;
@@ -21,7 +22,8 @@
 .site-header__logo {
   width: 3.5rem;
   height: 3.5rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .site-header__brand-text {
   display: grid;
@@ -74,7 +76,7 @@
   z-index: 995;
   max-height: calc(100dvh - 6.25rem);
   overflow: auto;
-  background-color: #eceeed;
+  background-color: var(--color-white);
   transform: translateY(-16px);
   opacity: 0;
   visibility: hidden;
@@ -89,7 +91,7 @@
   transform: translateY(0);
 }
 .site-menu__inner {
-  padding-block: 1.5rem 2rem;
+  padding-block: 1.5rem 3.125rem;
 }
 .site-menu__list {
   list-style: none;
@@ -107,16 +109,13 @@
 
 .site-menu-hours {
   max-width: 61.0625rem;
-  padding-block: 0 2.5rem;
+  padding-block: 0 3.75rem;
 }
 
-.site-menu-hours__title {
-  margin-bottom: 2.375rem;
-  text-align: center;
-  font-size: 2.625rem;
-  letter-spacing: .08em;
-  color: #15382b;
+.site-menu-hours h2 {
+  margin-bottom: 2.5rem;
 }
+
 .site-menu-hours__table-wrap {
   overflow-x: auto;
 }
@@ -125,179 +124,134 @@
   min-width: 41rem;
   border-collapse: collapse;
   table-layout: fixed;
-  border: 1px solid #8fb3a2;
-  background-color: #fff;
+  border: 1px solid #005D58;
+  background-color: var(--color-white);
 }
 
 .site-menu-hours__table th,
 .site-menu-hours__table td {
   text-align: center;
   vertical-align: middle;
-  padding: 1.05rem .25rem;
-  border: 1px solid #8fb3a2;
-  font-size: 2.25rem;
+  padding: 1.25rem 0;
+  border: 1px dotted var(--color-text);
+  font-size: 1.6875rem;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 .site-menu-hours__table thead th {
-  color: #fff;
-  background-color: #2f5f42;
-  font-weight: 700;
+  color: var(--color-white);
+  background-color: var(--color-primary);
 }
 
 .site-menu-hours__table thead th:first-child {
-  width: 10.75rem;
+  width: 15.625rem;
 }
 
 .site-menu-hours__table tbody th {
-  color: #fff;
-  background-color: #2f5f42;
-  font-weight: 700;
-  font-size: 2.25rem;
+  padding: 1.5625rem 0;
+  color: var(--color-white);
+  background-color: var(--color-primary);
 }
 
 .site-menu-hours__table tbody td {
-  color: #d5a14a;
-  font-weight: 700;
-}
-
-.site-menu-hours__table tbody td + td {
-  border-left: 1px dotted #b2b2b2;
+  font-size: 2.5rem;
+  color: var(--color-accent);
 }
 
 .site-menu-hours__note {
-  margin: .875rem 0 0;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #2e3f35;
+  margin-top: 1.25rem;
+  color: var(--color-text);
 }
 
 .site-menu-contact {
   position: relative;
-  padding-block: 72px;
+  padding-block: 8.125rem;
   overflow: hidden;
 }
 
 .site-menu-contact__bg {
   position: absolute;
-  inset: 0;
-  background-image: url("/assets/img/f2778d09108b4c824dd29e1fee7c873372e1145f.jpg");
+  inset: -1.25rem;
+  background-image: url("../img/f2778d09108b4c824dd29e1fee7c873372e1145f.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 62%;
-  filter: blur(2.5px);
-  transform: scale(1.08);
+  background-position: center bottom;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  transform: scale(1.03);
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 30px,
+    rgba(0, 0, 0, 0.45) 50px,
+    black 75px
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 30px,
+    rgba(0, 0, 0, 0.45) 50px,
+    black 75px
+  );
 }
 
 .site-menu-contact__card {
   position: relative;
   z-index: 1;
-  max-width: 760px;
-  padding: 36px;
-  border-radius: 20px;
+  max-width: 54.5rem;
+  padding: 2rem;
+  display: grid;
+  justify-content: center;
+  border-radius: 1.25rem;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.site-menu-contact__label {
-  margin: 0;
-  color: #b07e39;
+.site-menu-contact__card hgroup {
+  margin-bottom: 1.25rem;
 }
 
-.site-menu-contact__title {
-  margin: 4px 0 12px;
-  font-size: 2rem;
+.site-menu-contact__card p {
+  margin-bottom: 0;
 }
 
 .site-menu-contact__text {
-  margin: 0;
-}
-
-.site-menu-contact__buttons {
-  margin: 20px 0;
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
+  text-align: left;
 }
 
 @media screen and (max-width: 768px) {
-  .site-header__inner {
-    min-height: 80px;
-  }
-
-  .site-header__logo {
-    width: 46px;
-    height: 46px;
-  }
-
-  .site-header__name {
-    font-size: 1.25rem;
-  }
-
-  .site-header__subname {
-    font-size: 0.75rem;
-  }
-
-  .site-header__menu-button {
-    width: 48px;
-    height: 48px;
-  }
-
-  .site-menu {
-    top: 80px;
-    max-height: calc(100dvh - 80px);
-  }
-
-  .site-menu-hours {
-    padding-bottom: 2rem;
-  }
-
-  .site-menu-hours__title {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-  }
-
   .site-menu-hours__table {
-    min-width: 31rem;
+    min-width: 100%;
   }
 
   .site-menu-hours__table th,
   .site-menu-hours__table td {
-    font-size: 1.75rem;
-    padding: .85rem .2rem;
+    padding: clamp(1rem, 0.3211rem + 2.5862vw, 1.5625rem) 0;
+    font-size: clamp(1rem, 0.1703rem + 3.1609vw, 1.6875rem);
   }
 
   .site-menu-hours__table thead th:first-child {
-    width: 8.5rem;
+    width: clamp(9rem, 1.0043rem + 30.4598vw, 15.625rem);
   }
 
   .site-menu-hours__table tbody th {
-    font-size: 1.5rem;
-    white-space: nowrap;
+    padding: 0;
+  }
+
+  .site-menu-hours__table tbody td {
+    font-size: clamp(1rem, -0.8103rem + 6.8966vw, 2.5rem);
   }
 
   .site-menu-hours__note {
-    margin-top: .625rem;
-    font-size: 1.25rem;
+    font-size: clamp(0.875rem, 0.7241rem + 0.5747vw, 1rem);
   }
 
   .site-menu-contact {
-    padding-block: 56px;
+    padding-block: 13.75rem;
   }
 
   .site-menu-contact__bg {
-    background-size: auto 130%;
     background-position: center center;
-    filter: blur(2px);
-    transform: scale(1.04);
-  }
-
-  .site-menu-contact__card {
-    padding: 28px 20px;
-  }
-
-  .site-menu-contact__title {
-    font-size: 1.75rem;
   }
 }
