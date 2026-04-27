@@ -100,7 +100,7 @@
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<meta content="telephone=no" name="format-detection">
-	<link href="https://kiyama-katakosi.com/" rel="canonical">
+	<link href="https://kiyama-katakosiharikyuuin.com/" rel="canonical">
 	<link href="assets/img/favicon.ico" rel="icon">
 	<link href="https://fonts.googleapis.com" rel="preconnect">
 	<link href="https://fonts.gstatic.com" rel="preconnect">
@@ -122,25 +122,25 @@
 		<div class="site-menu__inner wrapper">
 			<ul class="site-menu__list">
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link" href="javascript:void(0)">三つの特徴</a>
+					<a aria-disabled="true" class="site-menu__link" disabled>三つの特徴</a>
 				</li>
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link" href="javascript:void(0)">院長あいさつ</a>
+					<a aria-disabled="true" class="site-menu__link" disabled>院長あいさつ</a>
 				</li>
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link" href="javascript:void(0)">お客様の声</a>
+					<a aria-disabled="true" class="site-menu__link" disabled>お客様の声</a>
 				</li>
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link" href="javascript:void(0)">施術の流れ</a>
+					<a aria-disabled="true" class="site-menu__link" disabled>施術の流れ</a>
 				</li>
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link" href="javascript:void(0)">料金</a>
+					<a aria-disabled="true" class="site-menu__link" disabled>料金</a>
 				</li>
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link" href="javascript:void(0)">アクセス</a>
+					<a aria-disabled="true" class="site-menu__link" disabled>アクセス</a>
 				</li>
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link" href="javascript:void(0)">お問い合わせ</a>
+					<a aria-disabled="true" class="site-menu__link" disabled>お問い合わせ</a>
 				</li>
 			</ul>
 		</div>
@@ -192,7 +192,7 @@
 				ご希望日時・メッセージをお送り下さい。</p>
 				<div class="site-menu-contact__buttons">
 					<a class="c-button c-button--line site-menu-contact__button--tel" href="tel:07035256934"><img alt="" class="c-button__icon" src="assets/img/tel-icon.svg"> 070-3525-6934</a> <a class="c-button c-button--line site-menu-contact__button--external" href="https://lin.ee/9mo0d6V" rel="noopener noreferrer" target="_blank">LINE <img alt="" class="c-button__icon" src="assets/img/external-link-icon.svg"></a>
-				</div><a class="c-button c-button--primary site-menu-contact__reserve-button" href="javascript:void(0)">予約する</a>
+				</div><a class="c-button c-button--primary site-menu-contact__reserve-button" href="contact.php">予約する</a>
 			</div>
 		</section>
 	</nav>
@@ -216,10 +216,10 @@
 				<div class="site-footer__address-row">
 					<address class="site-footer__address">
 						<span>〒769-1601</span> <span>香川県観音寺市豊浜町姫浜 701-1</span>
-					</address><a class="site-footer__detail-link" href="#" rel="noopener noreferrer" target="_blank">詳しくはこちら <img alt="" class="c-button__icon" src="assets/img/map-pin.svg"></a>
+					</address><a class="site-footer__detail-link" href="https://maps.app.goo.gl/cKzpzbnaSFheEMDWA" rel="noopener noreferrer" target="_blank">詳しくはこちら <img alt="" class="c-button__icon" src="assets/img/map-pin.svg"></a>
 				</div>
 				<div class="site-footer__cta">
-					<a class="c-button c-button--line site-footer__cta-button site-footer__cta-button--tel" href="#" rel="noopener noreferrer" target="_blank"><img alt="" class="c-button__icon" src="assets/img/tel-icon.svg"> <span>070-3525-6934</span></a> <a class="c-button c-button--line site-footer__cta-button" href="#" rel="noopener noreferrer" target="_blank"><span>LINE</span> <img alt="" class="c-button__icon" src="assets/img/external-link-icon.svg"></a> <a class="c-button c-button--line site-footer__cta-button" href="#" rel="noopener noreferrer" target="_blank"><span>Instagram</span> <img alt="" class="c-button__icon" src="assets/img/external-link-icon.svg"></a>
+					<a class="c-button c-button--line site-footer__cta-button site-footer__cta-button--tel" href="tel:07035256934" rel="noopener noreferrer" target="_blank"><img alt="" class="c-button__icon" src="assets/img/tel-icon.svg"> <span>070-3525-6934</span></a> <a class="c-button c-button--line site-footer__cta-button" href="https://lin.ee/9mo0d6V" rel="noopener noreferrer" target="_blank"><span>LINE</span> <img alt="" class="c-button__icon" src="assets/img/external-link-icon.svg"></a> <a class="c-button c-button--line site-footer__cta-button" href="https://www.instagram.com/kiyama.katakosi.harikyuuinn?igsh=emtpMG4xdDg5YTV5&utm_source=qr" rel="noopener noreferrer" target="_blank"><span>Instagram</span> <img alt="" class="c-button__icon" src="assets/img/external-link-icon.svg"></a>
 				</div>
 			</div>
 			<div class="site-footer__schedule">
@@ -257,28 +257,28 @@
 		<nav aria-label="フッターナビ" class="site-footer__nav">
 			<ul class="site-footer__nav-list wrapper">
 				<li>
-					<a href="#">三つの特徴</a>
+					<a href="#" disabled>三つの特徴</a>
 				</li>
 				<li>
-					<a href="#">今までの成り立ち</a>
+					<a href="#" disabled>今までの成り立ち</a>
 				</li>
 				<li>
-					<a href="#">施術の流れ</a>
+					<a href="#" disabled>施術の流れ</a>
 				</li>
 				<li>
-					<a href="#">営業時間</a>
+					<a href="#" disabled>営業時間</a>
 				</li>
 				<li>
-					<a href="#">料金</a>
+					<a href="#" disabled>料金</a>
 				</li>
 				<li>
-					<a href="#">アクセス</a>
+					<a href="#" disabled>アクセス</a>
 				</li>
 				<li>
-					<a href="#">お問い合わせ</a>
+					<a href="contact.php">お問い合わせ</a>
 				</li>
 				<li>
-					<a href="#">プライバシーポリシー</a>
+					<a href="privacy.html">プライバシーポリシー</a>
 				</li>
 			</ul>
 		</nav>
