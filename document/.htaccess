@@ -1,0 +1,12 @@
+AuthType Basic
+AuthName "Restricted Area"
+AuthUserFile /home/users/1/versus.jp-vanguard/web/.htpasswd
+Require valid-user
+
+RewriteEngine On
+
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ https://tsurumiworks.com/$1 [R=301,L]
+
+# END WordPress
