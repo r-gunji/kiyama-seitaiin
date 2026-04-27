@@ -28,20 +28,20 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<meta content="telephone=no" name="format-detection">
 	<link href="https://kiyama-katakosiharikyuuin.com/" rel="canonical">
-	<link href="../assets/img/favicon.ico" rel="icon">
+	<link href="https://tsurumiworks.com/assets/img/favicon.ico" rel="icon">
 	<link href="https://fonts.googleapis.com" rel="preconnect">
 	<link href="https://fonts.gstatic.com" rel="preconnect">
 	<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://unpkg.com/ress@4.0.0/dist/ress.min.css" rel="stylesheet">
-	<link href="../assets/css/style.css" rel="stylesheet">
-	<link href="../assets/css/header.css" rel="stylesheet">
-	<link href="../assets/css/footer.css" rel="stylesheet">
-	<link href="../assets/css/contact.css" rel="stylesheet">
+	<link href="https://tsurumiworks.com/assets/css/style.css" rel="stylesheet">
+	<link href="https://tsurumiworks.com/assets/css/header.css" rel="stylesheet">
+	<link href="https://tsurumiworks.com/assets/css/footer.css" rel="stylesheet">
+	<link href="https://tsurumiworks.com/assets/css/contact.css" rel="stylesheet">
 </head>
 <body class="page-contact">
 	<header class="site-header">
 		<div class="site-header__inner wrapper">
-			<a class="site-header__brand" href="index.html"><img alt="木山整体院 ロゴ" class="site-header__logo" src="assets/img/1776753879505.webp"> <span class="site-header__brand-text"><span class="site-header__name">きやま整体</span> <span class="site-header__subname">肩腰はりきゅう院</span></span></a> <button aria-controls="site-menu-panel" aria-expanded="false" aria-label="メニューを開く" class="site-header__menu-button js-menu-button" type="button"><span class="site-header__menu-line"></span> <span class="site-header__menu-line"></span> <span class="site-header__menu-line"></span></button>
+			<a class="site-header__brand" href="https://tsurumiworks.com/index.html"><img alt="木山整体院 ロゴ" class="site-header__logo" src="https://tsurumiworks.com/assets/img/1776753879505.webp"> <span class="site-header__brand-text"><span class="site-header__name">きやま整体</span> <span class="site-header__subname">肩腰はりきゅう院</span></span></a> <button aria-controls="site-menu-panel" aria-expanded="false" aria-label="メニューを開く" class="site-header__menu-button js-menu-button" type="button"><span class="site-header__menu-line"></span> <span class="site-header__menu-line"></span> <span class="site-header__menu-line"></span></button>
 		</div>
 	</header>
 	<div aria-hidden="true" class="site-menu-overlay js-menu-overlay"></div>
@@ -118,8 +118,8 @@
 				<p class="site-menu-contact__text">ご予約フォーム・お電話・インスタDM・LINE等から、<br>
 				ご希望日時・メッセージをお送り下さい。</p>
 				<div class="site-menu-contact__buttons">
-					<a class="c-button c-button--line site-menu-contact__button--tel" href="tel:07035256934"><img alt="" class="c-button__icon" src="assets/img/tel-icon.svg"> 070-3525-6934</a> <a class="c-button c-button--line site-menu-contact__button--external" href="https://lin.ee/9mo0d6V" rel="noopener noreferrer" target="_blank">LINE <img alt="" class="c-button__icon" src="assets/img/external-link-icon.svg"></a>
-				</div><a class="c-button c-button--primary site-menu-contact__reserve-button" href="contact.php">予約する</a>
+					<a class="c-button c-button--line site-menu-contact__button--tel" href="tel:07035256934"><img alt="" class="c-button__icon" src="https://tsurumiworks.com/assets/img/tel-icon.svg"> 070-3525-6934</a> <a class="c-button c-button--line site-menu-contact__button--external" href="https://lin.ee/9mo0d6V" rel="noopener noreferrer" target="_blank">LINE <img alt="" class="c-button__icon" src="https://tsurumiworks.com/assets/img/external-link-icon.svg"></a>
+				</div><a class="c-button c-button--primary site-menu-contact__reserve-button" href="https://tsurumiworks.com/contact.php">予約する</a>
 			</div>
 		</section>
 	</nav>
@@ -222,7 +222,7 @@
 					<div class="contact-main__consent">
 						<div class="form-consent">
 							<div class="agree">
-								<label for="agree"><input id="agree" name="agree" required="" type="checkbox"> <span class="checkmark"></span> <span><a href="privacy.html">プライバシーポリシー</a>に同意する</span></label> <!--<div class="error-message-agree">
+								<label for="agree"><input id="agree" name="agree" required="" type="checkbox"> <span class="checkmark"></span> <span><a href="https://tsurumiworks.com/privacy.html">プライバシーポリシー</a>に同意する</span></label> <!--<div class="error-message-agree">
                     ※プライバシーポリシーに同意してください
                   </div>-->
 							</div><button class="button top-button" id="submitBtn" type="submit"><span class="submit-text">確認する <svg height="20" viewbox="0 0 24 24" width="20">
@@ -236,14 +236,14 @@
 	<footer class="site-footer">
 		<div class="site-footer__main wrapper">
 			<div class="site-footer__info">
-				<a class="site-footer__brand" href="index.html"><img alt="木山整体院 ロゴ" class="site-footer__logo" src="assets/img/1776753879505.webp"> <span class="site-footer__brand-text"><span class="site-footer__name">きやま整体</span> <span class="site-footer__subname">肩腰はりきゅう院</span></span></a>
+				<a class="site-footer__brand" href="https://tsurumiworks.com/index.html"><img alt="木山整体院 ロゴ" class="site-footer__logo" src="https://tsurumiworks.com/assets/img/1776753879505.webp"> <span class="site-footer__brand-text"><span class="site-footer__name">きやま整体</span> <span class="site-footer__subname">肩腰はりきゅう院</span></span></a>
 				<div class="site-footer__address-row">
 					<address class="site-footer__address">
 						<span>〒769-1601</span> <span>香川県観音寺市豊浜町姫浜 701-1</span>
-					</address><a class="site-footer__detail-link" href="https://maps.app.goo.gl/cKzpzbnaSFheEMDWA" rel="noopener noreferrer" target="_blank">詳しくはこちら <img alt="" class="c-button__icon" src="assets/img/map-pin.svg"></a>
+					</address><a class="site-footer__detail-link" href="https://maps.app.goo.gl/cKzpzbnaSFheEMDWA" rel="noopener noreferrer" target="_blank">詳しくはこちら <img alt="" class="c-button__icon" src="https://tsurumiworks.com/assets/img/map-pin.svg"></a>
 				</div>
 				<div class="site-footer__cta">
-					<a class="c-button c-button--line site-footer__cta-button site-footer__cta-button--tel" href="tel:07035256934" rel="noopener noreferrer" target="_blank"><img alt="" class="c-button__icon" src="assets/img/tel-icon.svg"> <span>070-3525-6934</span></a> <a class="c-button c-button--line site-footer__cta-button" href="https://lin.ee/9mo0d6V" rel="noopener noreferrer" target="_blank"><span>LINE</span> <img alt="" class="c-button__icon" src="assets/img/external-link-icon.svg"></a> <a class="c-button c-button--line site-footer__cta-button" href="https://www.instagram.com/kiyama.katakosi.harikyuuinn?igsh=emtpMG4xdDg5YTV5&utm_source=qr" rel="noopener noreferrer" target="_blank"><span>Instagram</span> <img alt="" class="c-button__icon" src="assets/img/external-link-icon.svg"></a>
+					<a class="c-button c-button--line site-footer__cta-button site-footer__cta-button--tel" href="tel:07035256934" rel="noopener noreferrer" target="_blank"><img alt="" class="c-button__icon" src="https://tsurumiworks.com/assets/img/tel-icon.svg"> <span>070-3525-6934</span></a> <a class="c-button c-button--line site-footer__cta-button" href="https://lin.ee/9mo0d6V" rel="noopener noreferrer" target="_blank"><span>LINE</span> <img alt="" class="c-button__icon" src="https://tsurumiworks.com/assets/img/external-link-icon.svg"></a> <a class="c-button c-button--line site-footer__cta-button" href="https://www.instagram.com/kiyama.katakosi.harikyuuinn?igsh=emtpMG4xdDg5YTV5&utm_source=qr" rel="noopener noreferrer" target="_blank"><span>Instagram</span> <img alt="" class="c-button__icon" src="https://tsurumiworks.com/assets/img/external-link-icon.svg"></a>
 				</div>
 			</div>
 			<div class="site-footer__schedule">
@@ -299,19 +299,19 @@
 					<a href="#" disabled>アクセス</a>
 				</li>
 				<li>
-					<a href="contact.php">お問い合わせ</a>
+					<a href="https://tsurumiworks.com/contact.php">お問い合わせ</a>
 				</li>
 				<li>
-					<a href="privacy.html">プライバシーポリシー</a>
+					<a href="https://tsurumiworks.com/privacy.html">プライバシーポリシー</a>
 				</li>
 			</ul>
 		</nav>
 	</footer>
-	<script src="../assets/js/style.js">
+	<script src="https://tsurumiworks.com/assets/js/style.js">
 	</script> 
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js">
 	</script> 
-	<script src="../assets/js/contact.js">
+	<script src="https://tsurumiworks.com/assets/js/contact.js">
 	</script>
 </body>
 </html>
