@@ -70,3 +70,94 @@ strong {
 	color: #999999;
 	text-align: center;
 }
+th {
+    width: 25%;
+}
+.form-consent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact-main__consent {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    width: 366px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #237C66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button .submit-text {
+    color: var(--color-white);
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+}
+.back-button {
+    background-color: #245C4E;
+}
+.page-contact .button {
+    margin: 25px;
+}
+footer h2{
+    color: var(--color-white);
+}
+/*wrapperのスムージング*/
+@media screen and (max-width: 1280px) {
+    .wrapper {
+        width: 90%;
+    }
+    input,.contact-main__control,textarea {
+        width: 70%;
+    }
+    select {
+        width: 100%;
+    }
+}
+/*タブレット＆SP版の処理*/
+@media screen and (max-width: 768px) {
+    input,select,textarea {
+        width: 100%;
+    }
+    .contact-main__control {
+        width: 100%;
+    }
+    .list-title {
+        margin-bottom: 20px;
+    }
+    textarea {
+        height: 150px;
+    }
+    tr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    th,td {
+        height: auto;
+        padding: 20px 0;
+        width: 100%;
+    }
+    .contact-main__inner form {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    h2 {
+      font-size: clamp(1.5rem, 3.92vw, 2.625rem);  
+    }
+    .page-contact .button {
+        margin: 25px clamp(0rem, 4.26vw, 3.125rem);
+    }
+    .complete-heading, .complete-bodying {
+        font-size: clamp(0.75rem, 2.96vw, 1rem);
+    }
+    .button,.complete-main__inner a {
+        width: clamp(300px, 61vw, 366px);
+        height: clamp(49px, 10vw, 60px);
+    }
+}
