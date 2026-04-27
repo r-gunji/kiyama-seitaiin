@@ -136,7 +136,7 @@
           <!--<div class="form-error">
             <p>未入力の項目があります。</p>
           </div>-->
-          <form class="contact-main__form" action="confirm.php" method="post">
+          <form class="contact-main__form" action="./confirm.php" method="post">
             <div class="form-field">
 
               <div class="form-row <?php if (isset($errors['is_name_empty'])) echo 'open-empty'; ?>">
