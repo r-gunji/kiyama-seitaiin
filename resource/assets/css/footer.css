@@ -19,6 +19,7 @@
 .site-footer__brand {
 	display: inline-flex;
 	align-items: center;
+	width: fit-content;
 	gap: 1rem;
 }
 .site-footer__logo {
@@ -137,6 +138,8 @@
 	-webkit-text-decoration-color: var(--color-white);
 	text-decoration-color: var(--color-white);
 	text-underline-offset: 0.3em;
+	cursor: default;
+	pointer-events: none;
 }
 @media screen and (max-width: 768px) {
 	.site-footer {
