@@ -91,27 +91,27 @@
 ?>
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-	<title>お問い合わせ完了 | きやま整体院</title>
-	<meta charset="utf-8">
-	<meta content="きやま整体院のお問い合わせ完了ページです。" name="description">
-	<meta content="きやま整体院, お問い合わせ, お問い合わせ完了, お問い合わせ完了ページ" name="keywords">
-	<meta content="index, follow" name="robots">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<meta content="telephone=no" name="format-detection">
-	<link href="https://kiyama-katakosiharikyuuin.com/" rel="canonical">
-	<link href="https://tsurumiworks.com/assets/img/favicon.ico" rel="icon">
-	<link href="https://fonts.googleapis.com" rel="preconnect">
-	<link href="https://fonts.gstatic.com" rel="preconnect">
-	<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
-	<link href="https://unpkg.com/ress@4.0.0/dist/ress.min.css" rel="stylesheet">
-	<link href="https://tsurumiworks.com/assets/css/style.css" rel="stylesheet">
-	<link href="https://tsurumiworks.com/assets/css/header.css" rel="stylesheet">
-	<link href="https://tsurumiworks.com/assets/css/footer.css" rel="stylesheet">
-	<link href="https://tsurumiworks.com/assets/css/contact.css" rel="stylesheet">
-</head>
-<body class="page-contact">
+  <head>
+    <title>お問い合わせ完了 | きやま整体院</title>
+    <meta charset="utf-8">
+    <meta name="description" content="きやま整体院のお問い合わせ完了ページです。">
+    <meta name="keywords" content="きやま整体院, お問い合わせ, お問い合わせ完了, お問い合わせ完了ページ">
+    <meta name="robots" content="index, follow">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="canonical" href="https://kiyama-katakosiharikyuuin.com/">
+    <link rel="icon" href="https://tsurumiworks.com/assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ress@4.0.0/dist/ress.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://tsurumiworks.com/assets/css/style.css">
+    <link rel="stylesheet" href="https://tsurumiworks.com/assets/css/header.css">
+    <link rel="stylesheet" href="https://tsurumiworks.com/assets/css/footer.css">
+    <link rel="stylesheet" href="https://tsurumiworks.com/assets/css/contact.css">
+  </head>
+  <body class="page-contact">
 	<header class="site-header">
 		<div class="site-header__inner wrapper">
 			<a class="site-header__brand" href="https://tsurumiworks.com/index.html"><img alt="木山整体院 ロゴ" class="site-header__logo" src="https://tsurumiworks.com/assets/img/1776753879505.webp"> <span class="site-header__brand-text"><span class="site-header__name">きやま整体</span> <span class="site-header__subname">肩腰はりきゅう院</span></span></a> <button aria-controls="site-menu-panel" aria-expanded="false" aria-label="メニューを開く" class="site-header__menu-button js-menu-button" type="button"><span class="site-header__menu-line"></span> <span class="site-header__menu-line"></span> <span class="site-header__menu-line"></span></button>
@@ -192,23 +192,36 @@
 				ご希望日時・メッセージをお送り下さい。</p>
 				<div class="site-menu-contact__buttons">
 					<a class="c-button c-button--line site-menu-contact__button--tel" href="tel:07035256934"><img alt="" class="c-button__icon" src="https://tsurumiworks.com/assets/img/tel-icon.svg"> 070-3525-6934</a> <a class="c-button c-button--line site-menu-contact__button--external" href="https://lin.ee/9mo0d6V" rel="noopener noreferrer" target="_blank">LINE <img alt="" class="c-button__icon" src="https://tsurumiworks.com/assets/img/external-link-icon.svg"></a>
-				</div><a class="c-button c-button--primary site-menu-contact__reserve-button" href="https://tsurumiworks.com/contact.php">予約する</a>
+				</div><a class="c-button c-button--primary site-menu-contact__reserve-button" href="https://tsurumiworks.com/contact/contact.php">予約する</a>
 			</div>
 		</section>
 	</nav>
-	<main>
-		<div class="wrapper">
-			<section class="complete-main" id="complete">
-				<div class="complete-main__inner l-inner">
-					<p class="complete-heading">この度はご予約いただき、誠にありがとうございます。<br>
-					ご入力いただいた内容を確認のうえ、折り返しご連絡いたします。</p>
-					<p class="complete-bodying">なお、数日経っても連絡がない場合は、<br>
-					お手数ですがお電話にてお問い合わせください。</p><a class="button top-button" href="https://tsurumiworks.com/index.html"><svg class="arrow--left" height="20" viewbox="0 0 24 24" width="20">
-					<path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>トップに戻る</a>
-				</div>
-			</section>
-		</div>
-	</main>
+
+    <main>
+      <div  class="c-wrapper">
+        <section class="complete-main" id="complete">
+          <div class="complete-main__inner l-inner">
+            <p class="complete-heading">
+              この度はご予約いただき、誠にありがとうございます。<br>
+              ご入力いただいた内容を確認のうえ、折り返しご連絡いたします。
+            </p>
+            <p class="complete-bodying">
+              なお、数日経っても連絡がない場合は、<br>
+              お手数ですがお電話にてお問い合わせください。
+            </p>
+            <a class="button top-button" href="https://tsurumiworks.com/index.html">
+              <svg class="arrow--left" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M5 12h14M13 5l7 7-7 7"
+                  stroke="white"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                stroke-linejoin="round" />
+              </svg>トップに戻る</a>
+          </div>
+        </section>
+      </div>
+    </main>
 	<footer class="site-footer">
 		<div class="site-footer__main wrapper">
 			<div class="site-footer__info">
@@ -219,7 +232,7 @@
 					</address><a class="site-footer__detail-link" href="https://maps.app.goo.gl/cKzpzbnaSFheEMDWA" rel="noopener noreferrer" target="_blank">詳しくはこちら <img alt="" class="c-button__icon" src="https://tsurumiworks.com/assets/img/map-pin.svg"></a>
 				</div>
 				<div class="site-footer__cta">
-					<a class="c-button c-button--line site-footer__cta-button site-footer__cta-button--tel" href="tel:07035256934" rel="noopener noreferrer" target="_blank"><img alt="" class="c-button__icon" src="https://tsurumiworks.com/assets/img/tel-icon.svg"> <span>070-3525-6934</span></a> <a class="c-button c-button--line site-footer__cta-button" href="https://lin.ee/9mo0d6V" rel="noopener noreferrer" target="_blank"><span>LINE</span> <img alt="" class="c-button__icon" src="https://tsurumiworks.com/assets/img/external-link-icon.svg"></a> <a class="c-button c-button--line site-footer__cta-button" href="https://www.instagram.com/kiyama.katakosi.harikyuuinn?igsh=emtpMG4xdDg5YTV5&utm_source=qr" rel="noopener noreferrer" target="_blank"><span>Instagram</span> <img alt="" class="c-button__icon" src="https://tsurumiworks.com/assets/img/external-link-icon.svg"></a>
+					<a class="c-button c-button--line site-footer__cta-button site-footer__cta-button--tel" href="tel:07035256934" rel="noopener noreferrer"><img alt="" class="c-button__icon" src="https://tsurumiworks.com/assets/img/tel-icon.svg"> <span>070-3525-6934</span></a> <a class="c-button c-button--line site-footer__cta-button" href="https://lin.ee/9mo0d6V" rel="noopener noreferrer" target="_blank"><span>LINE</span> <img alt="" class="c-button__icon" src="https://tsurumiworks.com/assets/img/external-link-icon.svg"></a> <a class="c-button c-button--line site-footer__cta-button" href="https://www.instagram.com/kiyama.katakosi.harikyuuinn?igsh=emtpMG4xdDg5YTV5&utm_source=qr" rel="noopener noreferrer" target="_blank"><span>Instagram</span> <img alt="" class="c-button__icon" src="https://tsurumiworks.com/assets/img/external-link-icon.svg"></a>
 				</div>
 			</div>
 			<div class="site-footer__schedule">
@@ -275,7 +288,7 @@
 					<a href="#" disabled>アクセス</a>
 				</li>
 				<li>
-					<a href="https://tsurumiworks.com/contact.php">お問い合わせ</a>
+					<a href="https://tsurumiworks.com/contact/contact.php">お問い合わせ</a>
 				</li>
 				<li>
 					<a href="https://tsurumiworks.com/privacy.html">プライバシーポリシー</a>
@@ -283,9 +296,8 @@
 			</ul>
 		</nav>
 	</footer>
-	<script src="https://tsurumiworks.com/assets/js/style.js">
-	</script> 
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js">
-	</script>
-</body>
+
+    <script src="https://tsurumiworks.com/assets/js/style.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </body>
 </html>

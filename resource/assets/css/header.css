@@ -254,4 +254,8 @@
   .site-menu-contact__bg {
     background-position: center center;
   }
+
+  .site-menu-contact__text {
+    text-align: center;
+  }
 }
