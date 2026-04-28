@@ -98,6 +98,7 @@
 	table-layout: fixed;
 }
 .site-footer__table tr {
+	display: table-row;
 	border-bottom: 1px dashed var(--color-text);
 }
 .site-footer__table th, .site-footer__table td {
@@ -178,7 +179,7 @@
 		padding: 0.35rem 0;
 	}
 	.site-footer__table th:first-child {
-		width: clamp(5.8rem, 4.8966rem + 3.4483vw, 6.55rem);
+		width: clamp(7rem, 3.2687rem + 11.9403vw, 9rem);
 		font-size: clamp(1rem, 0.6983rem + 1.1494vw, 1.25rem);
 	}
 	.site-footer__table tbody td {
