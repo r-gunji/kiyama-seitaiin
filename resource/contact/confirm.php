@@ -55,7 +55,7 @@
   writeRequestLog();
 ?>
 <?php
-  require_once 'https://tsurumiworks.com/php/utils.php';
+  require_once '../php/utils.php';
   noCacheOnDebug();
   session_start();
 

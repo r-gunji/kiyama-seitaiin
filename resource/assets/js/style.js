@@ -53,3 +53,29 @@ function setScrollbarWidth() {
 window.addEventListener('load', setScrollbarWidth);
 // リサイズ時にも再計算
 window.addEventListener('resize', setScrollbarWidth);
+
+document.addEventListener("DOMContentLoaded", function() {
+	const fvCard = document.querySelector(".fv__card");
+	const closeButton = document.querySelector(".js-fv-card-close");
+	const footer = document.querySelector(".site-footer");
+	if (!fvCard || !closeButton || !footer) {
+		return;
+	}
+	const fadeOffset = 24;
+	const updateFvCardFade = function() {
+		if (fvCard.classList.contains("is-closed")) {
+			return;
+		}
+		const footerTop = footer.getBoundingClientRect().top;
+		const shouldFade = footerTop <= window.innerHeight - fadeOffset;
+		fvCard.classList.toggle("is-fading", shouldFade);
+	};
+	closeButton.addEventListener("click", function() {
+		fvCard.classList.add("is-closed");
+	});
+	window.addEventListener("scroll", updateFvCardFade, {
+		passive: true
+	});
+	window.addEventListener("resize", updateFvCardFade);
+	updateFvCardFade();
+});

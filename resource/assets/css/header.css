@@ -126,6 +126,10 @@
   background-color: var(--color-white);
 }
 
+.site-menu-hours__table tr {
+  display: table-row;
+}
+
 .site-menu-hours__table th,
 .site-menu-hours__table td {
   text-align: center;
