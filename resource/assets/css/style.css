@@ -159,7 +159,7 @@ hgroup p {
 .fv__inner {
 	position: relative;
 	height: calc(100vh - 6.25rem);
-	background: url("../img/AdobeStock_1851564181.webp") center calc(50% + 10%)/ cover no-repeat;
+	background: url("https://kiyama-katakosiharikyuuin.com/assets/img/AdobeStock_1851564181.webp") center calc(50% + 10%)/ cover no-repeat;
 	overflow: hidden;
 }
 .fv__copy {
