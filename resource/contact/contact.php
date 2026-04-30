@@ -163,17 +163,6 @@
                 <?php endif; ?>
               </div>
 
-              <div class="form-row <?php if (isset($errors['is_confirm_email_empty'])) echo 'open-empty'; ?> <?php if (isset($errors['is_confirm_email_illegal']) || isset($errors['is_confirm_email_not_match'])) echo 'open'; ?>">
-                <span class="list-title">
-                  <label for="confirm-email">メールアドレス[確認用]</label>
-                  <h5 class="required">＊</h5>
-                </span>
-                <input autocomplete="email" id="confirm-email" name="confirm-email" placeholder="入力例：info@example.jp" type="email" value="<?php echo htmlspecialchars($post_data['confirm-email'] ?? '', ENT_QUOTES, 'UTF-8'); ?>" required>
-                <?php if (isset($errors['is_confirm_email_empty']) || isset($errors['is_confirm_email_illegal']) || isset($errors['is_confirm_email_not_match'])): ?>
-                  <span class="error-message <?php if (isset($errors['is_confirm_email_empty']) || isset($errors['is_confirm_email_illegal']) || isset($errors['is_confirm_email_not_match'])) echo 'open'; ?>">※確認用メールアドレスを正しく入力してください</span>
-                <?php endif; ?>
-              </div>
-
               <div class="form-row">
                 <span class="list-title">
                   <label for="tel">電話番号</label>
@@ -206,35 +195,63 @@
                   <label for="preferreddate">希望日時</label>
                   <h5 class="required">＊</h5>
                 </span>
-                <input autocomplete="off" id="preferreddate" name="preferreddate" placeholder="/年/月/日 --:--" type="datetime-local" value="<?php echo htmlspecialchars($post_data['preferreddate'] ?? '', ENT_QUOTES, 'UTF-8'); ?>" required>
-                <script>
-                  const now = new Date();
+                <input autocomplete="off" id="preferred_date" name="preferred_date" type="date" value="<?php echo htmlspecialchars($post_data['preferred_date'] ?? '', ENT_QUOTES, 'UTF-8'); ?>" required>
 
-                  // YYYY-MM-DDTHH:MM 形式に整形
-                  const formatted = now.toISOString().slice(0,16);
-
-                  document.getElementById("preferreddate").min = formatted;
-                  
-              </script>
                 <?php if (isset($errors['is_preferreddate_empty'])): ?>
-                  <span class="error-message <?php if (isset($errors['is_preferreddate_empty'])) echo 'open'; ?>">※希望日時を入力してください</span>
+                  <span class="error-message open">※希望日を入力してください</span>
                 <?php endif; ?>
               </div>
 
               <div class="form-row">
                 <span class="list-title">
-                  <label class="contact-main__label" for="menu">メニュー</label>
+                  <label for="preferred_hour">希望時間</label>
                   <h5 class="required">＊</h5>
                 </span>
+
                 <div class="contact-main__control">
-                  <div class="contact-main__select">
-                    <select id="menu" name="menu" required>
-                      <option value="">選択してください</option>
-                      <option value="整体" <?php echo (($post_data['menu'] ?? '') === '整体') ? 'selected' : ''; ?>>整体</option>
-                      <option value="鍼灸" <?php echo (($post_data['menu'] ?? '') === '鍼灸') ? 'selected' : ''; ?>>鍼灸</option>
-                    </select>
-                  </div>
+                  <select id="preferred_time" name="preferred_time" required>
+                    <option value="">時間を選択してください</option>
+                    <?php for ($hour = 10; $hour <= 22; $hour++): ?>
+                      <?php if ($hour === 22): ?>
+                        <!-- 22時は00のみ -->
+                        <option value="22:00" <?php echo (($post_data['preferred_time'] ?? '') === '22:00') ? 'selected' : ''; ?>>
+                          22:00
+                        </option>
+                      <?php else: ?>
+                        <?php foreach (['00', '15', '30', '45'] as $minute): ?>
+                          <?php $timeValue = sprintf('%02d:%s', $hour, $minute); ?>
+                          <option value="<?php echo $timeValue; ?>" <?php echo (($post_data['preferred_time'] ?? '') === $timeValue) ? 'selected' : ''; ?>>
+                            <?php echo $timeValue; ?>
+                          </option>
+                        <?php endforeach; ?>
+                      <?php endif; ?>
+                    <?php endfor; ?>
+                  </select>
+                  <input id="preferreddate" name="preferreddate" type="hidden" value="<?php echo htmlspecialchars($post_data['preferreddate'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
+                  <?php if (isset($errors['is_preferreddate_empty'])): ?>
+                    <span class="error-message open">※希望時間を選択してください</span>
+                  <?php endif; ?>
                 </div>
+
+                <script>
+                  const form = document.querySelector('.contact-main__form');
+                  const preferredDate = document.getElementById('preferred_date');
+                  const preferredTime = document.getElementById('preferred_time');
+                  const preferredDateTime = document.getElementById('preferreddate');
+
+                  const today = new Date();
+                  const year = today.getFullYear();
+                  const month = String(today.getMonth() + 1).padStart(2, '0');
+                  const day = String(today.getDate()).padStart(2, '0');
+
+                  preferredDate.min = `${year}-${month}-${day}`;
+
+                  form.addEventListener('submit', function () {
+                    if (preferredDate.value && preferredTime.value) {
+                      preferredDateTime.value = `${preferredDate.value}T${preferredTime.value}`;
+                    }
+                  });
+                </script>
               </div>
 
               <div class="form-row">
