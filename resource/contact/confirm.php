@@ -17,25 +17,16 @@
       $isError['is_furigana_illegal'] = true;
   }
   $hasEmail = hasValueIn('email');
-  $hasConfirmEmail = hasValueIn('confirm-email');
   if(!$hasEmail){
     $isError['is_email_empty'] = true;
   }elseif(!isMailText($_POST['email'])){
     $isError['is_email_illegal'] = true;
   }
-  if(!$hasConfirmEmail){
-    $isError['is_confirm_email_empty'] = true;
-  }elseif(!isMailText($_POST['confirm-email'])){
-    $isError['is_confirm_email_illegal'] = true;
-  }
-  if($hasEmail && $hasConfirmEmail && $_POST['confirm-email'] !== $_POST['email']){
-    $isError['is_confirm_email_not_match'] = true;
-  }
   if(!hasValueIn('tel')){
       $isError['is_tel_empty'] = true;
   }
-  if(!hasValueIn('preferreddate')){
-      $isError['is_preferreddate_empty'] = true;
+  if (!hasValueIn('preferred_date') || !hasValueIn('preferred_time') || !hasValueIn('preferreddate')) {
+    $isError['is_preferreddate_empty'] = true;
   }
   if(!hasValueIn('comment')){
     $isError['is_comment_empty'] = true;
@@ -204,16 +195,6 @@
             </tr>
             <tr>
               <th>
-                <p>メールアドレス[確認用]</p>
-              </th>
-              <td>
-                <div class="row-content">
-                  <?php echo htmlspecialchars($_POST['confirm-email'], ENT_QUOTES, 'UTF-8'); ?>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th>
                 <p>電話番号</p>
               </th>
               <td>
@@ -232,22 +213,19 @@
                 </div>
               </td>
             </tr>
-            </tr>
+            <tr>
               <th>
                 <p>希望日時</p>
               </th>
               <td>
                 <div class="row-content">
-                  <?php echo htmlspecialchars($_POST['preferreddate'], ENT_QUOTES, 'UTF-8'); ?>
-                </div>
-              </td>
-            </tr>
-              <th>
-                <p>メニュー</p>
-              </th>
-              <td>
-                <div>
-                  <?php echo htmlspecialchars($_POST['menu'], ENT_QUOTES, 'UTF-8'); ?>
+                <?php
+                  echo htmlspecialchars(
+                    ($_POST['preferred_date'] ?? '') . ' ' . ($_POST['preferred_time'] ?? ''),
+                    ENT_QUOTES,
+                    'UTF-8'
+                  );
+                ?>
                 </div>
               </td>
             </tr>

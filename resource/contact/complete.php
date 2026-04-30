@@ -30,20 +30,14 @@
         $isError['is_furigana_illegal'] = true;
     }
     $hasEmail = hasValueIn('email');
-    $hasConfirmEmail = hasValueIn('confirm-email');
     if(!$hasEmail){
       $isError['is_email_empty'] = true;
     }elseif(!isMailText($_POST['email'])){
       $isError['is_email_illegal'] = true;
     }
-    if(!$hasConfirmEmail){
-      $isError['is_confirm_email_empty'] = true;
-    }elseif(!isMailText($_POST['confirm-email'])){
-      $isError['is_confirm_email_illegal'] = true;
-    }
-    if($hasEmail && $hasConfirmEmail && $_POST['confirm-email'] !== $_POST['email']){
-      $isError['is_confirm_email_not_match'] = true;
-    }
+		if(!hasValueIn('tel')){
+      $isError['is_tel_empty'] = true;
+  	}
     if (!hasValueIn('inquiry')) {
         $isError['is_inquiry_empty'] = true;
     }
@@ -72,11 +66,9 @@
       '${name}' => htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8'),
       '${furigana}' => htmlspecialchars($_POST['furigana'], ENT_QUOTES, 'UTF-8'),
       '${email}' => htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8'),
-      '${confirm-email}' => htmlspecialchars($_POST['confirm-email'], ENT_QUOTES, 'UTF-8'),
       '${tel}' => htmlspecialchars($_POST['tel'], ENT_QUOTES, 'UTF-8'),
       '${inquiry}' => htmlspecialchars($_POST['inquiry'] ?? '', ENT_QUOTES, 'UTF-8'),
       '${preferreddate}' => htmlspecialchars($_POST['preferreddate'] ?? '', ENT_QUOTES, 'UTF-8'),
-      '${menu}' => htmlspecialchars($_POST['menu'] ?? '', ENT_QUOTES, 'UTF-8'),
       '${comment}' => htmlspecialchars($_POST['comment'] ?? '', ENT_QUOTES, 'UTF-8'),
       '${other}' => htmlspecialchars($_POST['other'] ?? '', ENT_QUOTES, 'UTF-8'),
     ];

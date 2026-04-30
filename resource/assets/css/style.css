@@ -405,8 +405,9 @@ hgroup p {
 	align-items: flex-start;
 }
 .top-greeting__text {
+	margin-bottom: 1rem;
 	font-size: clamp(1rem, 0.7778rem + 0.463vw, 1.125rem);
-	line-height: 2;
+	line-height: 1.8;
 }
 .top-greeting__button-wrap {
 	margin-top: 2.75rem;
