@@ -1,0 +1,76 @@
+@charset "utf-8";
+.voice-page {
+  background-color: var(--color-white);
+}
+.voice-page__heading {
+  margin-bottom: 2.5rem;
+}
+.voice-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem clamp(2rem, -6rem + 12.5vw, 3.375rem);
+}
+.voice-page-card {
+  background-color: var(--color-white);
+  border-radius: 0.75rem;
+  box-shadow: 0 0px 10px rgba(33, 52, 39, 0.3);
+  padding: 1.5rem 2rem;
+  overflow: hidden;
+}
+.voice-page-card__image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform-origin: center;
+  transform: translateY(var(--voice-image-shift-y, 0)) scale(var(--voice-image-scale, 1));
+}
+.voice-page-card__image-wrap {
+  overflow: hidden;
+}
+.voice-page-card:not(:first-child) .voice-page-card__image {
+  --voice-image-scale: 1.3;
+}
+.voice-page-card__image--shift-up {
+  /* 上へ少し移動（カード内の切り抜き枠は overflow hidden で維持） */
+  --voice-image-shift-y: -2rem;
+}
+.voice-page-card__name {
+  margin: 1.25rem 0 0;
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.voice-page-card__text {
+  margin: 0.75rem 0 0;
+  letter-spacing: 0.05em;
+}
+.voice-page-card__text:first-of-type {
+  margin-top: 1.25rem;
+}
+.voice-page-card__accent {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+  .voice-page__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem 3.375rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .voice-page__grid {
+    grid-template-columns: 1fr;
+    gap: clamp(1.5rem, -0.7629rem + 8.6207vw, 3.375rem);
+  }
+  .voice-page-card {
+    padding: 1.5rem 2.5rem;
+  }
+  .voice-page-card__image-wrap {
+    aspect-ratio: 304 / 205;
+  }
+  .voice-page-card__text {
+    font-size: clamp(0.875rem, 0.7241rem + 0.5747vw, 1rem);
+  }
+}

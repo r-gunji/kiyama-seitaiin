@@ -40,6 +40,9 @@ a {
 .nowrap {
 	white-space: nowrap;
 }
+.pc-none {
+	display: none;
+}
 main {
 	padding-top: 100px;
 }
@@ -159,7 +162,7 @@ hgroup p {
 .fv__inner {
 	position: relative;
 	height: calc(100vh - 6.25rem);
-	background: url("https://kiyama-katakosiharikyuuin.com/assets/img/AdobeStock_1851564181.webp") center calc(50% + 10%)/ cover no-repeat;
+	background: url("https://tsurumiworks.com/assets/img/AdobeStock_1851564181.webp") center calc(50% + 10%)/ cover no-repeat;
 	overflow: hidden;
 }
 .fv__copy {
@@ -506,6 +509,12 @@ hgroup p {
 @media screen and (max-width: 768px) {
 	.wrapper {
 		width: min(100% - 32px, var(--container-width));
+	}
+	.pc-none {
+		display: block;
+	}
+	.sp-none {
+		display: none;
 	}
 	section {
 		padding-block: 80px;
