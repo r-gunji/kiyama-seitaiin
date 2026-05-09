@@ -41,6 +41,12 @@ main {
 	width: 100%;
 	margin-bottom: 100px;
 }
+#contact-form {
+	padding-block: 0;
+}
+#contact-title {
+	padding-bottom: 0;
+}
 .contact-main__inner {
 	width: 100%;
 	display: -webkit-box;
@@ -120,7 +126,7 @@ h5 {
 h2 {
 	color: #2A554B;
 	font-size: 2.625rem;
-	font-family: 'Noto Sans JP';
+	font-family: "Noto Sans JP", sans-serif;
 }
 p, label {
 	color: #245C4E;
@@ -129,7 +135,7 @@ hgroup p {
 	color: #E09C48;
 	font-size: 1.4375rem;
 	font-family: 'Noto Sans JP';
-	margin-bottom: 15px;
+	margin-bottom: 0;
 }
 .form-row {
 	width: 100%;
