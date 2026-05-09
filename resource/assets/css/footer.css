@@ -20,7 +20,7 @@
 	display: inline-flex;
 	align-items: center;
 	width: fit-content;
-	gap: 1rem;
+	gap: .56rem;
 }
 .site-footer__logo {
 	width: 3.5rem;
@@ -33,9 +33,8 @@
 	gap: 0.125rem;
 }
 .site-footer__name {
-	font-size: 1.5rem;
+	font-size: clamp(1rem, 4.7vw, 1.5rem);
 	line-height: 1.2;
-	letter-spacing: 0.08em;
 }
 .site-footer__subname {
 	font-size: .875rem;
