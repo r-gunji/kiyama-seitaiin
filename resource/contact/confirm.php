@@ -60,10 +60,10 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <title>お問い合わせ内容の確認 | きやま整体院</title>
+    <title>お問い合わせ内容の確認 | きやま肩腰はりきゅう院</title>
     <meta charset="utf-8">
-    <meta name="description" content="きやま整体院のお問い合わせ内容の確認ページです。">
-    <meta name="keywords" content="きやま整体院, お問い合わせ, お問い合わせ内容の確認, お問い合わせ内容の確認ページ">
+    <meta name="description" content="きやま肩腰はりきゅう院のお問い合わせ内容の確認ページです。">
+    <meta name="keywords" content="肩腰はりきゅう院, きやま整体, きやま肩腰はりきゅう院, お問い合わせ, お問い合わせ内容の確認, お問い合わせ内容の確認ページ">
     <meta name="robots" content="noindex, nofollow">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -82,21 +82,21 @@
   <body class="page-contact">
 	<header class="site-header">
 		<div class="site-header__inner wrapper">
-			<a class="site-header__brand" href="https://kiyama-katakosiharikyuuin.com/index.html"><img alt="木山整体院 ロゴ" class="site-header__logo" src="https://kiyama-katakosiharikyuuin.com/assets/img/1776753879505.webp"> <span class="site-header__brand-text"><span class="site-header__name">きやま整体</span> <span class="site-header__subname">肩腰はりきゅう院</span></span></a> <button aria-controls="site-menu-panel" aria-expanded="false" aria-label="メニューを開く" class="site-header__menu-button js-menu-button" type="button"><span class="site-header__menu-line"></span> <span class="site-header__menu-line"></span> <span class="site-header__menu-line"></span></button>
+			<a class="site-header__brand" href="https://kiyama-katakosiharikyuuin.com/index.html"><img alt="きやま肩腰はりきゅう院 ロゴ" class="site-header__logo" src="https://kiyama-katakosiharikyuuin.com/assets/img/1776753879505.webp"> <span class="site-header__brand-text"><span class="site-header__name">きやま</span> <span class="site-header__subname">肩腰はりきゅう院</span></span></a> <button aria-controls="site-menu-panel" aria-expanded="false" aria-label="メニューを開く" class="site-header__menu-button js-menu-button" type="button"><span class="site-header__menu-line"></span> <span class="site-header__menu-line"></span> <span class="site-header__menu-line"></span></button>
 		</div>
 	</header>
 	<div aria-hidden="true" class="site-menu-overlay js-menu-overlay"></div>
 	<nav aria-hidden="true" aria-label="グローバルメニュー" class="site-menu js-menu-panel" id="site-menu-panel">
 		<div class="site-menu__inner wrapper">
-      <ul class="site-menu__list">
+			<ul class="site-menu__list">
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link is-disabled" disabled>院長あいさつ</a>
+					<a class="site-menu__link" href="https://kiyama-katakosiharikyuuin.com/profile.html">院長あいさつ</a>
 				</li>
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link is-disabled" disabled>お客様の声</a>
+					<a class="site-menu__link" href="https://kiyama-katakosiharikyuuin.com/voice.html">お客様の声</a>
 				</li>
 				<li class="site-menu__item">
-					<a aria-disabled="true" class="site-menu__link is-disabled" disabled>アクセス</a>
+					<a class="site-menu__link" href="https://kiyama-katakosiharikyuuin.com/access.html">アクセス</a>
 				</li>
 				<li class="site-menu__item">
 					<a class="site-menu__link" href="https://kiyama-katakosiharikyuuin.com/contact/contact.php">お問い合わせ</a>
@@ -281,7 +281,7 @@
 	<footer class="site-footer">
 		<div class="site-footer__main wrapper">
 			<div class="site-footer__info">
-				<a class="site-footer__brand" href="https://kiyama-katakosiharikyuuin.com/index.html"><img alt="木山整体院 ロゴ" class="site-footer__logo" src="https://kiyama-katakosiharikyuuin.com/assets/img/1776753879505.webp"> <span class="site-footer__brand-text"><span class="site-footer__name">きやま整体</span> <span class="site-footer__subname">肩腰はりきゅう院</span></span></a>
+				<a class="site-footer__brand" href="https://kiyama-katakosiharikyuuin.com/index.html"><img alt="きやま肩腰はりきゅう院 ロゴ" class="site-footer__logo" src="https://kiyama-katakosiharikyuuin.com/assets/img/1776753879505.webp"> <span class="site-footer__brand-text"><span class="site-footer__name">きやま</span> <span class="site-footer__subname">肩腰はりきゅう院</span></span></a>
 				<div class="site-footer__address-row">
 					<address class="site-footer__address">
 						<span>〒769-1601</span> <span>香川県観音寺市豊浜町姫浜 701-1</span>
@@ -326,13 +326,13 @@
 		<nav aria-label="フッターナビ" class="site-footer__nav">
 			<ul class="site-footer__nav-list wrapper">
 				<li>
-					<a aria-disabled="true" class="is-disabled" href="#" disabled>院長あいさつ</a>
+					<a href="https://kiyama-katakosiharikyuuin.com/profile.html">院長あいさつ</a>
 				</li>
 				<li>
-					<a aria-disabled="true" class="is-disabled" href="#" disabled>お客様の声</a>
+					<a href="https://kiyama-katakosiharikyuuin.com/voice.html">お客様の声</a>
 				</li>
 				<li>
-					<a aria-disabled="true" class="is-disabled" href="#" disabled>アクセス</a>
+					<a href="https://kiyama-katakosiharikyuuin.com/access.html">アクセス</a>
 				</li>
 				<li>
 					<a href="https://kiyama-katakosiharikyuuin.com/contact/contact.php">お問い合わせ</a>
