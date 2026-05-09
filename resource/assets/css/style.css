@@ -188,6 +188,7 @@ hgroup p {
 .fv__text--bottom {
 	margin-top: .75rem;
 	margin-left: 2.5rem;
+	letter-spacing: 0.1em;
 }
 .fv__card {
 	position: fixed;
